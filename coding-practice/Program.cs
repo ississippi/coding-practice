@@ -53,17 +53,26 @@ Console.WriteLine(e);
 // ----------
 // DFS 
 // ----------
-var tree = new coding_practice_dfs.DFS();
-tree.Insert(9);
-tree.Insert(4);
-tree.Insert(6);
-tree.Insert(20);
-tree.Insert(170);
-tree.Insert(15);
-tree.Insert(1);
-var dfsIn = tree.DFSInOrder();
-Console.WriteLine("InOrder: " + JsonConvert.SerializeObject(dfsIn));
-var dfsPre = tree.DFSPreOrder();
-Console.WriteLine("PreOrder: " + JsonConvert.SerializeObject(dfsPre));
-var dfsPost = tree.DFSPostOrder();
-Console.WriteLine("PostOrder: " + JsonConvert.SerializeObject(dfsPost));
+//var tree = new coding_practice_dfs.DFS();
+//tree.Insert(9);
+//tree.Insert(4);
+//tree.Insert(6);
+//tree.Insert(20);
+//tree.Insert(170);
+//tree.Insert(15);
+//tree.Insert(1);
+//var dfsIn = tree.DFSInOrder();
+//Console.WriteLine("InOrder: " + JsonConvert.SerializeObject(dfsIn));
+//var dfsPre = tree.DFSPreOrder();
+//Console.WriteLine("PreOrder: " + JsonConvert.SerializeObject(dfsPre));
+//var dfsPost = tree.DFSPostOrder();
+//Console.WriteLine("PostOrder: " + JsonConvert.SerializeObject(dfsPost));
+
+// ===================
+// MoveZeroes
+// ===================
+//var mz = new int[] { 0, 1, 0, 3, 12 };
+var mz = new int[] { 0, 0, 1 };
+var moveZ = new MoveZeroesSolution();
+var mzArr = moveZ.MoveZeroes(mz);
+Console.WriteLine("MoveZeroes: " + JsonConvert.SerializeObject(mzArr));
