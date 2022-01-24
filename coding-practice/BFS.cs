@@ -19,9 +19,6 @@ namespace coding_practice_bfs
     public class BFS
     {
         public Node _root;
-        public BFS()
-        {
-        }
         public BFS Insert(int inValue)
         {
             var newNode = new Node(inValue);

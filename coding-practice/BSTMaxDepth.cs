@@ -7,38 +7,32 @@ using System.Threading.Tasks;
 namespace coding_practice_maxDepth
 {
 
-// Definition for a binary tree node.
-  public class TreeNode {
-      public int val;
-      public TreeNode left;
-      public TreeNode right;
-      public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
-    public class BinarySearchTree
+    // Definition for a binary tree node.
+    public class TreeNode
     {
-        TreeNode _root = null;
-        BinarySearchTree()
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int x)
         {
-            this._root = new TreeNode();
+            this.val = x;
         }
     }
-    //public int MaxDepth(TreeNode root)
-    //{
-
-    //}
-
-    internal class BSTMaxDepth
+    public class Solution
     {
-        //      function traverse(node)
-        //      {
-        //          const tree = { value: node.value };
-        //          tree.left = node.left === null ? null : traverse(node.left);
-        //          tree.right = node.right === null ? null : traverse(node.right);
-        //return tree;
+        public int MaxDepth(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+            else
+            {
+                int left_height = MaxDepth(root.left);
+                int right_height = MaxDepth(root.right);
+                return (left_height < right_height) ? right_height + 1 : left_height + 1;
+            }
+        }
     }
 
 }

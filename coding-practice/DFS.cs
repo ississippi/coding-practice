@@ -82,7 +82,7 @@ namespace coding_practice_dfs
             if (node.right != null)
             {
                 TraverseInOrder(node.right, resultList);
-            }
+            } 
             return resultList;
         }
 
