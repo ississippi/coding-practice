@@ -72,7 +72,14 @@ Console.WriteLine(e);
 // MoveZeroes
 // ===================
 //var mz = new int[] { 0, 1, 0, 3, 12 };
-var mz = new int[] { 0, 0, 1 };
-var moveZ = new MoveZeroesSolution();
-var mzArr = moveZ.MoveZeroes(mz);
-Console.WriteLine("MoveZeroes: " + JsonConvert.SerializeObject(mzArr));
+//var mz = new int[] { 0, 0, 1 };
+//var moveZ = new MoveZeroesSolution();
+//var mzArr = moveZ.MoveZeroes(mz);
+//Console.WriteLine("MoveZeroes: " + JsonConvert.SerializeObject(mzArr));
+
+// ===================
+// GetSum
+// ===================
+var g = new SolutionGetSum();
+var sum = g.GetSum(15, 15);
+Console.WriteLine(sum);
