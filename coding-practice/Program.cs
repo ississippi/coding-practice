@@ -83,3 +83,14 @@ Console.WriteLine(e);
 var g = new SolutionGetSum();
 var sum = g.GetSum(15, 15);
 Console.WriteLine(sum);
+
+// ======================
+// Palindrome LinkedList
+// ======================
+var head = new ListNode(2);
+var ll = new MyLinkedList(head);
+ll.Append(2);
+ll.Append(3);
+ll.Append(4);
+var h = new Palindromes();
+Console.WriteLine(h.IsPalindrome(ll.head));
