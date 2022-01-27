@@ -28,11 +28,11 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 //var c = s3.DoFizzBuzz(15);
 //Console.WriteLine(c);
 
- var s4 = new SingleNumber();
-//var e = s4.DoSingleNumber(d);
-//var e = s4.SingleNumberLeetCodeList(d);
-var e = s4.SingleNumberLeetCodeMath(d);
-Console.WriteLine(e);
+// var s4 = new SingleNumber();
+////var e = s4.DoSingleNumber(d);
+////var e = s4.SingleNumberLeetCodeList(d);
+//var e = s4.SingleNumberLeetCodeMath(d);
+//Console.WriteLine(e);
 
 // BinarySearchTree
 //var tree = new coding_practice_bfs.BFS();
@@ -80,17 +80,39 @@ Console.WriteLine(e);
 // ===================
 // GetSum
 // ===================
-var g = new SolutionGetSum();
-var sum = g.GetSum(15, 15);
-Console.WriteLine(sum);
+//var g = new SolutionGetSum();
+//var sum = g.GetSum(15, 15);
+//Console.WriteLine(sum);
 
 // ======================
 // Palindrome LinkedList
 // ======================
-var head = new ListNode(2);
-var ll = new MyLinkedList(head);
-ll.Append(2);
-ll.Append(3);
-ll.Append(4);
-var h = new Palindromes();
-Console.WriteLine(h.IsPalindrome(ll.head));
+//var h = new Palindromes();
+//Console.WriteLine(h.IsPalindrome(ll.head));
+
+// ======================
+// Excel Columns
+// ======================
+var x = new ExcelColumns();
+var sum = x.TitleToNumber("A");
+Console.WriteLine(sum); 
+sum = x.TitleToNumber("AB");
+Console.WriteLine(sum);
+sum = x.TitleToNumber("AAA");
+Console.WriteLine(sum);
+sum = x.TitleToNumber("FXSHRXW"); //2147483647
+Console.WriteLine(sum);
+sum = x.TitleToNumber("F"); //2147483647
+Console.WriteLine(sum);
+sum = x.TitleToNumber("X"); //2147483647
+Console.WriteLine(sum*26);
+sum = x.TitleToNumber("S"); //2147483647
+Console.WriteLine(sum * 26);
+sum = x.TitleToNumber("H"); //2147483647
+Console.WriteLine(sum * 26);
+sum = x.TitleToNumber("R"); //2147483647
+Console.WriteLine(sum * 26);
+sum = x.TitleToNumber("X"); //2147483647
+Console.WriteLine(sum * 26);
+sum = x.TitleToNumber("W"); //2147483647
+Console.WriteLine(sum * 26);
