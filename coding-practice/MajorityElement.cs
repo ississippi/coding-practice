@@ -39,5 +39,30 @@ namespace coding_practice
             return me;
         }
 
+        //Given an array nums of size n, return the majority element.
+        //The majority element is the element that appears more than ⌊n / 2⌋ times.You may assume that the majority element always exists in the array.
+        // My answer above missed the > n/2 specification
+        public int MajorityElementLeetCodeAnswer(int[] nums)
+        {
+            int majorityCount = nums.Length / 2;
+
+            foreach (int num in nums)
+            {
+                int count = 0;
+                foreach (int elem in nums)
+                {
+                    if (elem == num)
+                    {
+                        count += 1;
+                    }
+                }
+                if (count > majorityCount)
+                {
+                    return num;
+                }
+            }
+
+            return -1;
+        }
     }
 }
