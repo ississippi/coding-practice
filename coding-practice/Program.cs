@@ -132,10 +132,19 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 // ======================
 // Roman Numerals
 // ======================
-var rn = new RomanToInteger();
-string[] nums = new string[] { "III", "V", "IV", "IX", "XCIV", "MMMXL", "LCIX" };
-foreach(var s in nums)
-{
-    var val = rn.RomanToInt(s);
-    Console.WriteLine(s + " = " + val);
-}
+//var rn = new RomanToInteger();
+//string[] nums = new string[] { "III", "V", "IV", "IX", "XCIV", "MMMXL", "LCIX" };
+//foreach(var s in nums)
+//{
+//    var val = rn.RomanToInt(s);
+//    Console.WriteLine(s + " = " + val);
+//}
+
+// ==========================
+// Best Time to Buy and Sell
+// ==========================
+int[] prices = new int[] { 7, 1, 5, 3, 6, 4 };
+var b = new BestTimeToBuyandSell();
+//var sum = b.MaxProfit(prices);
+var sum = b.MaxProfitClean(prices);
+Console.WriteLine(sum);
