@@ -143,8 +143,65 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 // ==========================
 // Best Time to Buy and Sell
 // ==========================
-int[] prices = new int[] { 7, 1, 5, 3, 6, 4 };
-var b = new BestTimeToBuyandSell();
-//var sum = b.MaxProfit(prices);
-var sum = b.MaxProfitClean(prices);
-Console.WriteLine(sum);
+//int[] prices = new int[] { 7, 1, 5, 3, 6, 4 };
+//var b = new BestTimeToBuyandSell();
+////var sum = b.MaxProfit(prices);
+//var sum = b.MaxProfitClean(prices);
+//Console.WriteLine(sum);
+
+// ==========================================
+// 5993. Keep Multiplying Found Values by Two
+// ==========================================
+//int[] nums1 = new int[] { 5, 3, 6, 1, 12 };
+//int[] nums2 = new int[] { 8, 19, 4, 2, 15, 3 };
+//var l5993 = new LeetCodeContest278();
+////var sum = l5993.FindFinalValue(nums1, 3);
+//var sum = l5993.FindFinalValue(nums2, 2);
+//Console.WriteLine(sum);
+
+// =============================================================
+// 5981. All Divisions With the Highest Score of a Binary Array
+// =============================================================
+//int[] barray = new int[] { 0,0,1,0 };
+//var l5981 = new LeetCodeContest278();
+//var maxScore = l5981.MaxScoreIndices(barray);
+//Console.WriteLine(maxScore);
+
+// ===========================================
+// Graph: DisjointSet - QuickFind
+// ===========================================
+//var uf = new UnionFindQuickFind(10);
+//// 1-2-5-6-7 3-8-9 4
+//uf.union(1, 2);
+//uf.union(2, 5);
+//uf.union(5, 6);
+//uf.union(6, 7);
+//uf.union(3, 8);
+//uf.union(8, 9);
+//Console.WriteLine(uf.connected(1, 5)); // true
+//Console.WriteLine(uf.connected(5, 7)); // true
+//Console.WriteLine(uf.connected(4, 9)); // false
+//// 1-2-5-6-7 3-8-9-4
+//uf.union(9, 4);
+//Console.WriteLine(uf.connected(4, 9)); // true
+
+
+// ===========================================
+// Graph: DisjointSet - QuickFind
+// ===========================================
+
+var uf = new UnionFindQuickUnion(10);
+// 1-2-5-6-7 3-8-9 4
+uf.union(1, 2);
+uf.union(2, 5);
+uf.union(5, 6);
+uf.union(6, 7);
+uf.union(3, 8);
+uf.union(8, 9);
+Console.WriteLine(uf.connected(1, 5)); // true
+Console.WriteLine(uf.connected(5, 7)); // true
+Console.WriteLine(uf.connected(4, 9)); // false
+// 1-2-5-6-7 3-8-9-4
+uf.union(9, 4);
+Console.WriteLine(uf.connected(4, 9)); // true
+
