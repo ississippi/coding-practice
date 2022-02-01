@@ -185,7 +185,6 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 //uf.union(9, 4);
 //Console.WriteLine(uf.connected(4, 9)); // true
 
-
 // ===========================================
 // Graph: DisjointSet - QuickFind
 // ===========================================
@@ -204,4 +203,14 @@ Console.WriteLine(uf.connected(4, 9)); // false
 // 1-2-5-6-7 3-8-9-4
 uf.union(9, 4);
 Console.WriteLine(uf.connected(4, 9)); // true
+
+// ===================
+// Fibonacci
+// ===================
+var fib = new Fibonacci();
+var x = fib.FibonacciIterative(8);
+Console.WriteLine(" result: " + x);
+var y = fib.FibonacciRecursive(8);
+Console.WriteLine(" result: " + y);
+
 
