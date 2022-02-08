@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 var a = new char[] { 'h', 'e', 'l', 'l', 'o' };
 var d = new int[] { 4, 1, 2, 1, 2 };
 
+
 //var s1 = new ReverseString();
 //s1.ReverseString2Pointers(a);
 //Console.WriteLine(a);
@@ -189,28 +190,112 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 // Graph: DisjointSet - QuickFind
 // ===========================================
 
-var uf = new UnionFindQuickUnion(10);
-// 1-2-5-6-7 3-8-9 4
-uf.union(1, 2);
-uf.union(2, 5);
-uf.union(5, 6);
-uf.union(6, 7);
-uf.union(3, 8);
-uf.union(8, 9);
-Console.WriteLine(uf.connected(1, 5)); // true
-Console.WriteLine(uf.connected(5, 7)); // true
-Console.WriteLine(uf.connected(4, 9)); // false
-// 1-2-5-6-7 3-8-9-4
-uf.union(9, 4);
-Console.WriteLine(uf.connected(4, 9)); // true
+//var uf = new UnionFindQuickUnion(10);
+//// 1-2-5-6-7 3-8-9 4
+//uf.union(1, 2);
+//uf.union(2, 5);
+//uf.union(5, 6);
+//uf.union(6, 7);
+//uf.union(3, 8);
+//uf.union(8, 9);
+//Console.WriteLine(uf.connected(1, 5)); // true
+//Console.WriteLine(uf.connected(5, 7)); // true
+//Console.WriteLine(uf.connected(4, 9)); // false
+//// 1-2-5-6-7 3-8-9-4
+//uf.union(9, 4);
+//Console.WriteLine(uf.connected(4, 9)); // true
 
 // ===================
 // Fibonacci
 // ===================
-var fib = new Fibonacci();
-var x = fib.FibonacciIterative(8);
-Console.WriteLine(" result: " + x);
-var y = fib.FibonacciRecursive(8);
-Console.WriteLine(" result: " + y);
+//var fib = new Fibonacci();
+//var x = fib.FibonacciIterative(8);
+//Console.WriteLine(" result: " + x);
+//var y = fib.FibonacciRecursive(8);
+//Console.WriteLine(" result: " + y);
 
+//List<int> orders = new List<int>();
+//orders.Add(3);
+//orders.Add(5);
+//orders.Add(1);
+//orders.Add(4);
+//orders.Add(2);
+//var dd = new DoorDash();
+//var eligible = dd.GetEligibleOrders(orders);
+//Console.WriteLine(PrintList(eligible));
+
+// ===================
+// Longest Substring
+// ===================
+// Given a string s, find the length of the longest substring without repeating characters.
+//var ss = new LongestSubstring();
+//List<string> ts = new List<string>();
+//ts.Add("abcabcbb");
+//ts.Add("bbbbb");
+//ts.Add("pwwkew");
+//ts.Add("kkknananajjj");
+//ts.Add("sdfghdorkuscbbnnnnnn");
+//ts.Add("dorkussdfgh");
+//ts.Add("fffffffsdfghdorkus");
+//ts.Add("bab");
+//ts.Add("dvdf");
+//ts.Add("aab");
+//foreach (var s in ts)
+//{
+//    Console.WriteLine(String.Format($"Longest substring of {s} is of length {ss.LengthOfLongestSubstringBruteForce(s)}."));
+//}
+//foreach (var s in ts)
+//{
+//    Console.WriteLine(String.Format($"Longest substring of {s} is of length {ss.LengthOfLongestSubstringSlidingWindow(s)}."));
+//}
+//foreach (var s in ts)
+//{
+//    Console.WriteLine(String.Format($"Longest substring of {s} is of length {ss.LengthOfLongestSubstringSlidingWindowOptimized(s)}."));
+//}
+
+
+// ===================
+// Doordash
+// ===================
+var dd = new DoorDash();
+var dddata = new int[] { 3, 5, 1, 4, 2 };
+var eligible = dd.GetEligibleOrders(dddata);
+
+// ====================================================================================
+// Leetcode Contest 71
+// ====================================================================================
+//
+//var lc71 = new LeetcodeContest71();
+//// ==============================
+//// Minimum Sum
+//// ==============================
+//var lowest = lc71.MinimumSum2(2932);
+//Console.WriteLine(lowest);
+//// ==============================
+//// Pivot Array
+//// ==============================
+//var pivotArray1 = new int[] { 9, 12, 5, 10, 14, 3, 10 };
+//var newArray1 = lc71.PivotArray(pivotArray1, 10);
+//// Expected Output: [9, 5, 3, 10, 10, 12, 14]
+//Util.PrintArray("newArray1: Expected Output: [9, 5, 3, 10, 10, 12, 14]", newArray1);
+//var pivotArray2 = new int[] { -3, 4, 3, 2 };
+//var newArray2 = lc71.PivotArray(pivotArray2, 2);
+//Util.PrintArray("newArray2: Expected Output:[-3,2,4,3]", newArray2);
+
+// ====================================================================================
+// Leetcode Contest 279
+// ====================================================================================
+//
+var lc279 = new LeetcodeContest279();
+//var eo1 = new int[] { 4, 1, 2, 3 };
+//var resorted1 = lc279.SortEvenOdd(eo1);
+//Util.PrintArray("resorted: Expected Output:[2,3,4,1]", resorted1);
+//var eo2 = new int[] { 2,1 };
+//var resorted2 = lc279.SortEvenOdd(eo2);
+//Util.PrintArray("resorted: Expected Output:[2,1]", resorted2);
+//var eo3 = new int[] { 36, 45, 32, 31, 15, 41, 9, 46, 36, 6, 15, 16, 33, 26, 27, 31, 44, 34 };
+//var resorted3 = lc279.SortEvenOdd(eo3);
+//Util.PrintArray("resorted: Expected Output:[9,46,15,45,15,41,27,34,32,31,33,31,36,26,36,16,44,6]", resorted3);
+var newNum = lc279.SmallestNumber(310);
+Console.WriteLine(String.Format($"Expected: 301 Actual: {newNum}"));
 
