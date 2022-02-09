@@ -286,47 +286,47 @@ namespace coding_practice
      * string param_7 = obj.ToString();
      */
 
-    public class Bitset
-    {
+    //public class Bitset
+    //{
 
-        public Bitset(int size)
-        {
+    //    public Bitset(int size)
+    //    {
 
-        }
+    //    }
 
-        public void Fix(int idx)
-        {
+    //    public void Fix(int idx)
+    //    {
 
-        }
+    //    }
 
-        public void Unfix(int idx)
-        {
+    //    public void Unfix(int idx)
+    //    {
 
-        }
+    //    }
 
-        public void Flip()
-        {
+    //    public void Flip()
+    //    {
 
-        }
+    //    }
 
-        public bool All()
-        {
+    //    public bool All()
+    //    {
 
-        }
+    //    }
 
-        public bool One()
-        {
+    //    public bool One()
+    //    {
 
-        }
+    //    }
 
-        public int Count()
-        {
+    //    public int Count()
+    //    {
 
-        }
+    //    }
 
-        public string ToString()
-        {
+    //    public string ToString()
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }

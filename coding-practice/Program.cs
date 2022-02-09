@@ -286,7 +286,7 @@ var eligible = dd.GetEligibleOrders(dddata);
 // Leetcode Contest 279
 // ====================================================================================
 //
-var lc279 = new LeetcodeContest279();
+//var lc279 = new LeetcodeContest279();
 //var eo1 = new int[] { 4, 1, 2, 3 };
 //var resorted1 = lc279.SortEvenOdd(eo1);
 //Util.PrintArray("resorted: Expected Output:[2,3,4,1]", resorted1);
@@ -296,6 +296,62 @@ var lc279 = new LeetcodeContest279();
 //var eo3 = new int[] { 36, 45, 32, 31, 15, 41, 9, 46, 36, 6, 15, 16, 33, 26, 27, 31, 44, 34 };
 //var resorted3 = lc279.SortEvenOdd(eo3);
 //Util.PrintArray("resorted: Expected Output:[9,46,15,45,15,41,27,34,32,31,33,31,36,26,36,16,44,6]", resorted3);
-var newNum = lc279.SmallestNumber(310);
-Console.WriteLine(String.Format($"Expected: 301 Actual: {newNum}"));
+//var newNum = lc279.SmallestNumber(310);
+//Console.WriteLine(String.Format($"Expected: 301 Actual: {newNum}"));
 
+var ftd = new FindTheDifference389();
+var c1 = ftd.FindTheDifference("abcd", "abcde");
+Console.WriteLine("FindTheDifference for 'abcd', 'abcde' = " + c1);
+var c2 = ftd.FindTheDifference("", "y");
+Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
+
+// ====================================================================================
+// Valid Sudoku 36
+// ====================================================================================
+//
+// 36. Valid Sudoku - https://leetcode.com/problems/valid-sudoku/
+// Medium
+// Determine if a 9 x 9 Sudoku board is valid.Only the filled cells need to be validated according to the following rules:
+// Each row must contain the digits 1-9 without repetition.
+// Each column must contain the digits 1-9 without repetition.
+// Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+// Note:
+//A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+//Only the filled cells need to be validated according to the mentioned rules.
+var vs = new ValidSudoku36();
+char[,] grid1 = new char[,] {
+{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
+,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
+,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+var isValid1 = vs.IsValidSudoku(grid1);
+Console.WriteLine("IsValidSudoku isValid: " + isValid1);
+char[,] grid2 = new char[,] {
+{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
+,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+,{'4', '.', '.', '8', '6', '3', '.', '.', '1'}
+,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+var isValid2 = vs.IsValidSudoku(grid2);
+Console.WriteLine("IsValidSudoku isValid: " + isValid2);
+char[,] grid3 = new char[,] {
+{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+,{'6', '.', '3', '1', '9', '5', '.', '.', '.'}
+,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
+,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+var isValid3 = vs.IsValidSudoku(grid3);
+Console.WriteLine("IsValidSudoku isValid: " + isValid3);
