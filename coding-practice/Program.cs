@@ -396,24 +396,37 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // ====================================================================================
 // 128. Longest Consecutive Sequence https://leetcode.com/problems/longest-consecutive-sequence/
 // ====================================================================================
-var lcs = new LongestConsecutiveSequence128();
-var seq1 = new int[] { 100, 4, 200, 1, 3, 2 };
-var res1 = lcs.longestConsecutiveBest(seq1);
-Console.WriteLine("LongestConsecutive for [100, 4, 200, 1, 3, 2] is " + res1);
-var seq2 = new int[] { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
-var res2 = lcs.longestConsecutiveBest(seq2);
-Console.WriteLine("LongestConsecutive for [0, 3, 7, 2, 5, 8, 4, 6, 0, 1] is " + res2);
-var seq3 = new int[] { 0 };
-var res3 = lcs.longestConsecutiveBest(seq3);
-Console.WriteLine("LongestConsecutive for [0] is " + res3);
-var seq4 = new int[] { 0, 1 };
-var res4 = lcs.longestConsecutiveBest(seq4);
-Console.WriteLine("LongestConsecutive for [0, 1] is " + res4);
-var seq5 = new int[] { 0, 2 };
-var res5 = lcs.longestConsecutiveBest(seq5);
-Console.WriteLine("LongestConsecutive for [0, 2] is " + res5);
-var seq6 = new int[] { 0, 0 };
-var res6 = lcs.longestConsecutiveBest(seq5);
-Console.WriteLine("LongestConsecutive for [0, 0] is " + res6);
+//var lcs = new LongestConsecutiveSequence128();
+//var seq1 = new int[] { 100, 4, 200, 1, 3, 2 };
+//var res1 = lcs.longestConsecutiveBest(seq1);
+//Console.WriteLine("LongestConsecutive for [100, 4, 200, 1, 3, 2] is " + res1);
+//var seq2 = new int[] { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1 };
+//var res2 = lcs.longestConsecutiveBest(seq2);
+//Console.WriteLine("LongestConsecutive for [0, 3, 7, 2, 5, 8, 4, 6, 0, 1] is " + res2);
+//var seq3 = new int[] { 0 };
+//var res3 = lcs.longestConsecutiveBest(seq3);
+//Console.WriteLine("LongestConsecutive for [0] is " + res3);
+//var seq4 = new int[] { 0, 1 };
+//var res4 = lcs.longestConsecutiveBest(seq4);
+//Console.WriteLine("LongestConsecutive for [0, 1] is " + res4);
+//var seq5 = new int[] { 0, 2 };
+//var res5 = lcs.longestConsecutiveBest(seq5);
+//Console.WriteLine("LongestConsecutive for [0, 2] is " + res5);
+//var seq6 = new int[] { 0, 0 };
+//var res6 = lcs.longestConsecutiveBest(seq5);
+//Console.WriteLine("LongestConsecutive for [0, 0] is " + res6);
+
+// ====================================================================================
+// Rohan Mock Interview 2022-02-12
+// ====================================================================================
+var words = new string[] { "lottery", "bus", "table", "chair", "table", "newspaper", "bus", "car" };
+var rohan = new RohanMockInterview20220212();
+var rohanRes1 = rohan.GetWordFrequency(words);
+foreach (var word in rohanRes1)
+    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
+var seen = new Dictionary<string, int>();
+var rohanRes2 = rohan.GetWordFrequencyR(words, 0, seen);
+foreach (var word in rohanRes2)
+    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
 
 
