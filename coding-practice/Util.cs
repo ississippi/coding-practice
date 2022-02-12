@@ -17,12 +17,43 @@ namespace coding_practice
                 Console.Write(a);
             }
         }
+        public static void PrintList(string title, IList<string> p)
+        {
+            Console.WriteLine(title);
+            Console.WriteLine();
+            for (int i = 0; i < p.Count; i++)
+            {
+                if (i < p.Count - 1)
+                    Console.Write(p[i] + ",");
+                else
+                {
+                    Console.Write(p[i]);
+                    Console.WriteLine();
+                }
+            }
+        }
+
         public static void PrintArray(string title, int[] p)
         {
             Console.WriteLine(title);   
             for (int i = 0; i < p.Length; i++)
             {
                 if (i < p.Length - 1) 
+                    Console.Write(p[i] + ",");
+                else
+                {
+                    Console.Write(p[i]);
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        public static void PrintArray(string title, string[] p)
+        {
+            Console.WriteLine(title);
+            for (int i = 0; i < p.Length; i++)
+            {
+                if (i < p.Length - 1)
                     Console.Write(p[i] + ",");
                 else
                 {

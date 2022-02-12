@@ -318,40 +318,79 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // Note:
 //A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 //Only the filled cells need to be validated according to the mentioned rules.
-var vs = new ValidSudoku36();
-char[,] grid1 = new char[,] {
-{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
-,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
-,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
-,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
-,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
-,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
-,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
-,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
-,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
-var isValid1 = vs.IsValidSudoku(grid1);
-Console.WriteLine("IsValidSudoku isValid: " + isValid1);
-char[,] grid2 = new char[,] {
-{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
-,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
-,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
-,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
-,{'4', '.', '.', '8', '6', '3', '.', '.', '1'}
-,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
-,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
-,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
-,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
-var isValid2 = vs.IsValidSudoku(grid2);
-Console.WriteLine("IsValidSudoku isValid: " + isValid2);
-char[,] grid3 = new char[,] {
-{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
-,{'6', '.', '3', '1', '9', '5', '.', '.', '.'}
-,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
-,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
-,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
-,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
-,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
-,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
-,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
-var isValid3 = vs.IsValidSudoku(grid3);
-Console.WriteLine("IsValidSudoku isValid: " + isValid3);
+//var vs = new ValidSudoku36();
+//char[,] grid1 = new char[,] {
+//{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+//,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
+//,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+//,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+//,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
+//,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+//,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+//,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+//,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+//var isValid1 = vs.IsValidSudoku(grid1);
+//Console.WriteLine("IsValidSudoku isValid: " + isValid1);
+//char[,] grid2 = new char[,] {
+//{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+//,{'6', '.', '.', '1', '9', '5', '.', '.', '.'}
+//,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+//,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+//,{'4', '.', '.', '8', '6', '3', '.', '.', '1'}
+//,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+//,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+//,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+//,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+//var isValid2 = vs.IsValidSudoku(grid2);
+//Console.WriteLine("IsValidSudoku isValid: " + isValid2);
+//char[,] grid3 = new char[,] {
+//{ '5', '3', '.', '.', '7', '.', '.', '.', '.'}
+//,{'6', '.', '3', '1', '9', '5', '.', '.', '.'}
+//,{'.', '9', '8', '.', '.', '.', '.', '6', '.'}
+//,{'8', '.', '.', '.', '6', '.', '.', '.', '3'}
+//,{'4', '.', '.', '8', '.', '3', '.', '.', '1'}
+//,{'7', '.', '.', '.', '2', '.', '.', '.', '6'}
+//,{'.', '6', '.', '.', '.', '.', '2', '8', '.'}
+//,{'.', '.', '.', '4', '1', '9', '.', '.', '5'}
+//,{'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
+//var isValid3 = vs.IsValidSudoku(grid3);
+//Console.WriteLine("IsValidSudoku isValid: " + isValid3);
+
+// ====================================================================================
+// 217. Contains Duplicate - https://leetcode.com/problems/contains-duplicate/
+// ====================================================================================
+// Easy
+// Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+// Example 1:
+// Input: nums = [1,2,3,1]
+// Output: true
+
+// Example 2:
+// Input: nums = [1,2,3,4]
+// Output: false
+
+// Example 3:
+// Input: nums = [1,1,1,3,3,4,3,2,4,2]
+// Output: true
+//var cd = new ContainsDuplicate217();
+//var cd1 = new int[] { 1, 2, 3, 1 };
+//var dup1 = cd.ContainsDuplicate(cd1);
+//Console.WriteLine("ContainsDuplicate: [1,2,3,1] : " + dup1);
+//var cd2 = new int[] { 1, 2, 3, 4 };
+//var dup2 = cd.ContainsDuplicate(cd2);
+//Console.WriteLine("ContainsDuplicate: [1,2,3,4] : " + dup2);
+//var cd3 = new int[] { 1, 2, 3, 1 };
+//var dup3 = cd.ContainsDuplicate(cd3);
+//Console.WriteLine("ContainsDuplicate: [1,1,1,3,3,4,3,2,4,2] : " + dup3);
+
+// ====================================================================================
+// 187. Repeated DNA Sequences https://leetcode.com/problems/repeated-dna-sequences/
+// ====================================================================================
+var rdna = new RepeatingDNA();
+//var result1 = rdna.FindRepeatedDnaSequencesOptimal("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT");
+//Util.PrintList("FindRepeatedDnaSequences ",result1);
+var result2 = rdna.FindRepeatedDnaSequencesOptimal("AAAAAAAAAAA");
+Util.PrintList("FindRepeatedDnaSequences ", result2);
+
+
