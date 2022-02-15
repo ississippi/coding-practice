@@ -419,14 +419,25 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // ====================================================================================
 // Rohan Mock Interview 2022-02-12
 // ====================================================================================
-var words = new string[] { "lottery", "bus", "table", "chair", "table", "newspaper", "bus", "car" };
-var rohan = new RohanMockInterview20220212();
-var rohanRes1 = rohan.GetWordFrequency(words);
-foreach (var word in rohanRes1)
-    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
-var seen = new Dictionary<string, int>();
-var rohanRes2 = rohan.GetWordFrequencyR(words, 0, seen);
-foreach (var word in rohanRes2)
-    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
+//var words = new string[] { "lottery", "bus", "table", "chair", "table", "newspaper", "bus", "car" };
+//var rohan = new RohanMockInterview20220212();
+//var rohanRes1 = rohan.GetWordFrequency(words);
+//foreach (var word in rohanRes1)
+//    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
+//var seen = new Dictionary<string, int>();
+//var rohanRes2 = rohan.GetWordFrequencyR(words, 0, seen);
+//foreach (var word in rohanRes2)
+//    Console.WriteLine("Word: " + word.Key + " appeared " + word.Value + " times.");
 
+// ====================================================================================
+// 73. Set Matrix Zeroes https://leetcode.com/problems/set-matrix-zeroes/
+// ====================================================================================
+var smz = new SetMatrixZeroes73();
+var smzData1 = new int[][] { new int[] { 1, 1, 1 }, new int[] { 1, 0, 1 }, new int[] { 1, 1, 1 } };
+var smzRes1 = smz.SetZeroes(smzData1);
+Console.WriteLine();
+//[0,1,2,0],[3,4,5,2],[1,3,1,5]
+var smzData2 = new int[][] { new int[] { 0, 1, 2, 0 }, new int[] { 3, 4, 5, 2 }, new int[] { 1, 3, 1, 5 } };
+var smzRes2 = smz.SetZeroes(smzData2);
+Console.WriteLine();
 
