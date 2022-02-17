@@ -432,12 +432,43 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // ====================================================================================
 // 73. Set Matrix Zeroes https://leetcode.com/problems/set-matrix-zeroes/
 // ====================================================================================
-var smz = new SetMatrixZeroes73();
-var smzData1 = new int[][] { new int[] { 1, 1, 1 }, new int[] { 1, 0, 1 }, new int[] { 1, 1, 1 } };
-var smzRes1 = smz.SetZeroes(smzData1);
-Console.WriteLine();
-//[0,1,2,0],[3,4,5,2],[1,3,1,5]
-var smzData2 = new int[][] { new int[] { 0, 1, 2, 0 }, new int[] { 3, 4, 5, 2 }, new int[] { 1, 3, 1, 5 } };
-var smzRes2 = smz.SetZeroes(smzData2);
-Console.WriteLine();
+//var smz = new SetMatrixZeroes73();
+//var smzData1 = new int[][] { new int[] { 1, 1, 1 }, new int[] { 1, 0, 1 }, new int[] { 1, 1, 1 } };
+//var smzRes1 = smz.SetZeroes(smzData1);
+//Console.WriteLine();
+////[0,1,2,0],[3,4,5,2],[1,3,1,5]
+//var smzData2 = new int[][] { new int[] { 0, 1, 2, 0 }, new int[] { 3, 4, 5, 2 }, new int[] { 1, 3, 1, 5 } };
+//var smzRes2 = smz.SetZeroes(smzData2);
+//Console.WriteLine();
+
+// ====================================================================================
+// 249. Group Shifted Strings https://leetcode.com/problems/group-shifted-strings/
+// ====================================================================================
+//var gss = new GroupShiftedStrings249();
+//var gssData1 = new string[] {"abc","bcd","acef","xyz","az","ba","a","z"};
+//var gssRes1 = gss.GroupStrings(gssData1);
+//Console.WriteLine();
+
+// =========================================================================================================
+// 1570. Dot Product of Two Sparse Vectors https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
+// =========================================================================================================
+//var nums1 = new int[] { 1, 0, 0, 2, 3 };
+//var nums2 = new int[] { 0, 3, 0, 4, 0 };
+//var nums3 = new int[] { 0, 1, 0, 0, 0 };
+//var nums4 = new int[] { 0, 0, 0, 0, 2 };
+//var nums5 = new int[] { 0, 1, 0, 0, 2, 0, 0 };
+//var nums6 = new int[] { 1, 0, 0, 0, 3, 0, 4 };
+//SparseVector v1 = new SparseVector(nums1);
+//SparseVector v2 = new SparseVector(nums2);
+//var sumSparseVectors1 = v1.DotProduct(v2);
+//Console.WriteLine("Sum of vectors [1, 0, 0, 2, 3] and [0, 3, 0, 4, 0] : " + sumSparseVectors1);
+//SparseVector v3 = new SparseVector(nums3);
+//SparseVector v4 = new SparseVector(nums4);
+//var sumSparseVectors2 = v3.DotProduct(v4);
+//Console.WriteLine("Sum of vectors [0, 1, 0, 0, 0] and [0, 0, 0, 0, 2] : " + sumSparseVectors2);
+//SparseVector v5 = new SparseVector(nums5);
+//SparseVector v6 = new SparseVector(nums6);
+//var sumSparseVectors3 = v5.DotProduct(v6);
+//Console.WriteLine("Sum of vectors [0,1,0,0,2,0,0] and [1,0,0,0,3,0,4] : " + sumSparseVectors3);
+
 
