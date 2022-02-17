@@ -471,4 +471,15 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 //var sumSparseVectors3 = v5.DotProduct(v6);
 //Console.WriteLine("Sum of vectors [0,1,0,0,2,0,0] and [1,0,0,0,3,0,4] : " + sumSparseVectors3);
 
+// ===============================================================================================================================================
+// 1282. Group the People Given the Group Size They Belong To https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
+// ===============================================================================================================================================
+var gtp = new GroupThePeople1282();
+var gtpArr1 = new[] { 3, 3, 3, 3, 3, 1, 3 };
+var gtpRes1 = gtp.GroupThePeople(gtpArr1);
+Console.WriteLine();
+var gtpArr2 = new[] { 2, 1, 3, 3, 3, 2 };
+var gtpRes2 = gtp.GroupThePeople(gtpArr2);
+Console.WriteLine();
+
 
