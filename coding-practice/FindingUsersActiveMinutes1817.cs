@@ -57,25 +57,25 @@ namespace coding_practice
         }
 
         // Leetcode user solution converted from Java to C#
-        public int[] findingUsersActiveMinutes(int[][] logs, int k)
-        {
-            int[] ans = new int[k];
-            var map = new Dictionary<int, HashSet<int>>();
+        //public int[] findingUsersActiveMinutes(int[][] logs, int k)
+        //{
+        //    int[] ans = new int[k];
+        //    var map = new Dictionary<int, HashSet<int>>();
 
-            foreach (var arr in logs)
-            {
-                int key = arr[0];
-                HashSet<int> set = map.ElementAtOrDefault(key, new HashSet<int>());
-                set.Add(arr[1]);
-                map.Add(key, set);
-            }
+        //    foreach (var arr in logs)
+        //    {
+        //        int key = arr[0];
+        //        HashSet<int> set = map.ElementAtOrDefault(key, new HashSet<int>());
+        //        set.Add(arr[1]);
+        //        map.Add(key, set);
+        //    }
 
-            for (Map.Entry<Integer, HashSet<Integer>> entry : map.entrySet())
-            {
-                ans[entry.getValue().size() - 1]++;
-            }
+        //    for (Map.Entry<int, HashSet<int>> entry : map.entrySet())
+        //    {
+        //        ans[entry.getValue().size() - 1]++;
+        //    }
 
-            return ans;
-        }
+        //    return ans;
+        //}
     }
 }

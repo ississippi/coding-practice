@@ -494,7 +494,20 @@ Console.WriteLine();
 // =======================================================================================================
 // Leetcode Bi-weekly contest 72
 // =======================================================================================================
+//
+//  5996. Count Equal and Divisible Pairs in an Array https://leetcode.com/contest/biweekly-contest-72/problems/count-equal-and-divisible-pairs-in-an-array/
+// Easy
 var l72 = new LeetcodeContest72();
-//var logs1 = new int[][] { new int[] { 0, 5 }, new int[] { 1, 2 }, new int[] { 0, 2 }, new int[] { 0, 5 }, new int[] { 1, 3 } };
-//var res1 = ftuam.FindingUsersActiveMinutes(logs1, 5);
-//Console.WriteLine();
+//var c72n1 = new int[] { 3, 1, 2, 2, 2, 1, 3 };
+//var c72r1 = l72.CountPairs(c72n1, 2);
+//Console.WriteLine(" CountPairs of  [3, 1, 2, 2, 2, 1, 3] k=2 is: " + c72r1);
+//
+// 5997. Find Three Consecutive Integers That Sum to a Given Number https://leetcode.com/contest/biweekly-contest-72/problems/find-three-consecutive-integers-that-sum-to-a-given-number/
+//
+//long c72n2 = 33;
+//var c72r2 = l72.SumOfThree(c72n2);
+//Util.PrintArray("Sum of Three with 33", c72r2);
+//var c72r3 = l72.SumOfThree(462667378);
+//Util.PrintArray("Sum of Three with 478526380", c72r3);
+var c72r4 = l72.MaximumEvenSplit(28);
+Util.PrintList("MaximumEvenSplit with 28", c72r4);
