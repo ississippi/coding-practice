@@ -474,12 +474,27 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // ===============================================================================================================================================
 // 1282. Group the People Given the Group Size They Belong To https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
 // ===============================================================================================================================================
-var gtp = new GroupThePeople1282();
-var gtpArr1 = new[] { 3, 3, 3, 3, 3, 1, 3 };
-var gtpRes1 = gtp.GroupThePeople(gtpArr1);
-Console.WriteLine();
-var gtpArr2 = new[] { 2, 1, 3, 3, 3, 2 };
-var gtpRes2 = gtp.GroupThePeople(gtpArr2);
+//var gtp = new GroupThePeople1282();
+//var gtpArr1 = new[] { 3, 3, 3, 3, 3, 1, 3 };
+//var gtpRes1 = gtp.GroupThePeople(gtpArr1);
+//Console.WriteLine();
+//var gtpArr2 = new[] { 2, 1, 3, 3, 3, 2 };
+//var gtpRes2 = gtp.GroupThePeople(gtpArr2);
+//Console.WriteLine();
+
+// =======================================================================================================
+// 1817. Finding the Users Active Minutes https://leetcode.com/problems/finding-the-users-active-minutes/
+// =======================================================================================================
+var ftuam = new FindingUsersActiveMinutes1817();
+var logs1 = new int[][] { new int[] { 0, 5 }, new int[] { 1, 2 }, new int[] { 0, 2 }, new int[] { 0, 5 }, new int[] { 1, 3 } };
+var res1 = ftuam.FindingUsersActiveMinutes(logs1, 5);
 Console.WriteLine();
 
 
+// =======================================================================================================
+// Leetcode Bi-weekly contest 72
+// =======================================================================================================
+var l72 = new LeetcodeContest72();
+//var logs1 = new int[][] { new int[] { 0, 5 }, new int[] { 1, 2 }, new int[] { 0, 2 }, new int[] { 0, 5 }, new int[] { 1, 3 } };
+//var res1 = ftuam.FindingUsersActiveMinutes(logs1, 5);
+//Console.WriteLine();
