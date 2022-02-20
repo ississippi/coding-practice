@@ -497,7 +497,7 @@ Console.WriteLine();
 //
 //  5996. Count Equal and Divisible Pairs in an Array https://leetcode.com/contest/biweekly-contest-72/problems/count-equal-and-divisible-pairs-in-an-array/
 // Easy
-var l72 = new LeetcodeContest72();
+//var l72 = new LeetcodeContest72();
 //var c72n1 = new int[] { 3, 1, 2, 2, 2, 1, 3 };
 //var c72r1 = l72.CountPairs(c72n1, 2);
 //Console.WriteLine(" CountPairs of  [3, 1, 2, 2, 2, 1, 3] k=2 is: " + c72r1);
@@ -509,5 +509,63 @@ var l72 = new LeetcodeContest72();
 //Util.PrintArray("Sum of Three with 33", c72r2);
 //var c72r3 = l72.SumOfThree(462667378);
 //Util.PrintArray("Sum of Three with 478526380", c72r3);
-var c72r4 = l72.MaximumEvenSplit(28);
-Util.PrintList("MaximumEvenSplit with 28", c72r4);
+//var c72r4 = l72.MaximumEvenSplit(28);
+//Util.PrintList("MaximumEvenSplit with 28", c72r4);
+
+// =======================================================================================================
+// Leetcode weekly contest 281
+// =======================================================================================================
+//
+//  6012. Count Integers With Even Digit Sum https://leetcode.com/contest/weekly-contest-281/problems/count-integers-with-even-digit-sum/
+// Easy
+var l281 = new LeetcodeContest281();
+//var l281r1 = l281.CountEven(4);
+//Console.WriteLine("CountEven result from 4 is: " + l281r1); 
+//var l281r2 = l281.CountEven(30);
+//Console.WriteLine("CountEven result from 30 is: " + l281r2);
+//var l281r3 = l281.CountEven(684);
+//Console.WriteLine("CountEven result from 684 is: " + l281r3);
+//
+//var l281arr1 = new int[] { 1, 2, 3, 4, 5 };
+//var l281Pairs1 = l281.CoutPairs(l281arr1, 2);
+//Console.WriteLine("CountPairs from [1, 2, 3, 4, 5] is: " + l281Pairs1);
+//var l281arr2 = new int[] { 1, 2, 3, 4 };
+//var l281Pairs2 = l281.CoutPairs(l281arr2, 5);
+//Console.WriteLine("CountPairs from [1,2,3,4] is: " + l281Pairs2);
+
+// =======================================================================================================
+// 1756. Design Most Recently Used Queue - https://leetcode.com/problems/design-most-recently-used-queue/
+// =======================================================================================================
+var mruq1 = new MostRecentlyUsedQueue1756(8);
+var mruqr1 = mruq1.Fetch(3);
+Console.WriteLine("8: Fetch(3): " + mruqr1);
+var mruqr2 = mruq1.Fetch(5);
+Console.WriteLine("8: Fetch(5): " + mruqr2);
+var mruqr3 = mruq1.Fetch(2);
+Console.WriteLine("8: Fetch(2): " + mruqr3);
+var mruqr4 = mruq1.Fetch(8);
+Console.WriteLine("8: Fetch(8): " + mruqr4);
+
+var mruq2 = new MostRecentlyUsedQueue1756(3);
+var mruqr21 = mruq2.Fetch(3);
+Console.WriteLine("3: Fetch(3): " + mruqr21);
+var mruqr22 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr22);
+var mruqr23 = mruq2.Fetch(1);
+Console.WriteLine("3: Fetch(1): " + mruqr23);
+var mruqr24 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr24);
+var mruqr25 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr25);
+var mruqr26 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr26);
+var mruqr27 = mruq2.Fetch(3);
+Console.WriteLine("3: Fetch(3): " + mruqr27);
+var mruqr28 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr28);
+var mruqr29 = mruq2.Fetch(1);
+Console.WriteLine("3: Fetch(1): " + mruqr29);
+var mruqr210 = mruq2.Fetch(1);
+Console.WriteLine("3: Fetch(1): " + mruqr210);
+var mruqr211 = mruq2.Fetch(2);
+Console.WriteLine("3: Fetch(2): " + mruqr211);

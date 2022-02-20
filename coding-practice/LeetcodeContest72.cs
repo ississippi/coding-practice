@@ -116,6 +116,8 @@ namespace coding_practice
         // Now we have crSum = 12, and we want 14, so simply add difference(which is 14 - 12 = 2) in the last element of list
         // so list = [2, 4, 6 + (14 - 12)] = [2, 4, 8]
         //
+
+        // Time: ??? Space () ???
         public List<long> MaximumEvenSplit(long n)
         {
             var ans = new List<long>();
