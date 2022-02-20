@@ -536,36 +536,51 @@ var l281 = new LeetcodeContest281();
 // =======================================================================================================
 // 1756. Design Most Recently Used Queue - https://leetcode.com/problems/design-most-recently-used-queue/
 // =======================================================================================================
-var mruq1 = new MostRecentlyUsedQueue1756(8);
-var mruqr1 = mruq1.Fetch(3);
-Console.WriteLine("8: Fetch(3): " + mruqr1);
-var mruqr2 = mruq1.Fetch(5);
-Console.WriteLine("8: Fetch(5): " + mruqr2);
-var mruqr3 = mruq1.Fetch(2);
-Console.WriteLine("8: Fetch(2): " + mruqr3);
-var mruqr4 = mruq1.Fetch(8);
-Console.WriteLine("8: Fetch(8): " + mruqr4);
+//var mruq1 = new MostRecentlyUsedQueue1756(8);
+//var mruqr1 = mruq1.Fetch(3);
+//Console.WriteLine("8: Fetch(3): " + mruqr1);
+//var mruqr2 = mruq1.Fetch(5);
+//Console.WriteLine("8: Fetch(5): " + mruqr2);
+//var mruqr3 = mruq1.Fetch(2);
+//Console.WriteLine("8: Fetch(2): " + mruqr3);
+//var mruqr4 = mruq1.Fetch(8);
+//Console.WriteLine("8: Fetch(8): " + mruqr4);
 
-var mruq2 = new MostRecentlyUsedQueue1756(3);
-var mruqr21 = mruq2.Fetch(3);
-Console.WriteLine("3: Fetch(3): " + mruqr21);
-var mruqr22 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr22);
-var mruqr23 = mruq2.Fetch(1);
-Console.WriteLine("3: Fetch(1): " + mruqr23);
-var mruqr24 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr24);
-var mruqr25 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr25);
-var mruqr26 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr26);
-var mruqr27 = mruq2.Fetch(3);
-Console.WriteLine("3: Fetch(3): " + mruqr27);
-var mruqr28 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr28);
-var mruqr29 = mruq2.Fetch(1);
-Console.WriteLine("3: Fetch(1): " + mruqr29);
-var mruqr210 = mruq2.Fetch(1);
-Console.WriteLine("3: Fetch(1): " + mruqr210);
-var mruqr211 = mruq2.Fetch(2);
-Console.WriteLine("3: Fetch(2): " + mruqr211);
+//var mruq2 = new MostRecentlyUsedQueue1756(3);
+//var mruqr21 = mruq2.Fetch(3);
+//Console.WriteLine("3: Fetch(3): " + mruqr21);
+//var mruqr22 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr22);
+//var mruqr23 = mruq2.Fetch(1);
+//Console.WriteLine("3: Fetch(1): " + mruqr23);
+//var mruqr24 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr24);
+//var mruqr25 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr25);
+//var mruqr26 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr26);
+//var mruqr27 = mruq2.Fetch(3);
+//Console.WriteLine("3: Fetch(3): " + mruqr27);
+//var mruqr28 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr28);
+//var mruqr29 = mruq2.Fetch(1);
+//Console.WriteLine("3: Fetch(1): " + mruqr29);
+//var mruqr210 = mruq2.Fetch(1);
+//Console.WriteLine("3: Fetch(1): " + mruqr210);
+//var mruqr211 = mruq2.Fetch(2);
+//Console.WriteLine("3: Fetch(2): " + mruqr211);
+
+// =========================================================================================================================================
+// 1940. Longest Common Subsequence Between Sorted Arrays - https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/
+// =========================================================================================================================================
+
+var lcs1 = new LongestCommonSubsequence1940();
+var lcs1d1 = new int[][] { new int[] { 1, 3, 4 }, new int[] { 1, 4, 7, 9 } };
+var lcs1r1 = lcs1.LongestCommonSubsequence(lcs1d1);
+Util.PrintList("LongestCommonSubsequence of [1,3,4] and [1,4,7,9] is: ", lcs1r1);
+var lcs1d2 = new int[][] { new int[] { 2, 3, 6, 8 }, new int[] { 1, 2, 3, 5, 6, 7, 10 }, new int[] { 2, 3, 4, 6, 9 } };
+var lcs1r2 = lcs1.LongestCommonSubsequence(lcs1d2);
+Util.PrintList("LongestCommonSubsequence of [2, 3, 6, 8], [1, 2, 3, 5, 6, 7, 10], [2,3,4,6,9] is: ", lcs1r2);
+var lcs1d3 = new int[][] { new int[] { 1, 2, 3, 4, 5 }, new int[] { 6, 7, 8 } };
+var lcs1r3 = lcs1.LongestCommonSubsequence(lcs1d3);
+Util.PrintList("LongestCommonSubsequence of [1,2,3,4,5], [6,7,8] is: ", lcs1r3);

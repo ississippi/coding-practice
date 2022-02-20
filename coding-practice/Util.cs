@@ -32,6 +32,21 @@ namespace coding_practice
                 }
             }
         }
+        public static void PrintList(string title, IList<int> p)
+        {
+            Console.WriteLine(title);
+            Console.WriteLine();
+            for (int i = 0; i < p.Count; i++)
+            {
+                if (i < p.Count - 1)
+                    Console.Write(p[i] + ",");
+                else
+                {
+                    Console.Write(p[i]);
+                    Console.WriteLine();
+                }
+            }
+        }
         public static void PrintList(string title, IList<long> p)
         {
             Console.WriteLine(title);

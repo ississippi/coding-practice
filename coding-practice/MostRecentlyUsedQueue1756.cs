@@ -42,14 +42,14 @@ namespace coding_practice
         {
             if (k == q.Length)
                 return q[q.Length-1];
-            var kth = q[k-1];
+            var kth = q[k-1];       // input k is 1-indexed
             for (var i = k-1; i < q.Length-1; i++)
             {
                 q[i] = q[i+1];
             }
-            q[q.Length - 1] = kth;
+            q[q.Length - 1] = kth; //insert kth at the end of the q
 
-            return kth;
+            return kth; // and return the kth value.
         }
     }
 }
