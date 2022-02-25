@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace coding_practice
 {
-    // 1940. Longest Common Subsequence Between Sorted Arrays
+    // 1940. Longest Common Subsequence Between Sorted Arrays https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/
     // Medium
     // Given an array of integer arrays arrays where each arrays[i] is sorted in strictly increasing order,
     // return an integer array representing the longest common subsequence between all the arrays.
@@ -33,11 +33,13 @@ namespace coding_practice
     internal class LongestCommonSubsequence1940
     {
 
+        // O(n) + O(m)
         public IList<int> LongestCommonSubsequence(int[][] arrays)
         {
             var ans = new List<int>();
             var seenCount = new Dictionary<int, int>();
 
+            // 1. Get all of the distinct integers and count them up in a dictionary
             for (int i = 0; i < arrays.Length; i++)
             {
                 for (int j = 0; j < arrays[i].Length; j++)
@@ -53,6 +55,7 @@ namespace coding_practice
                     }
                 }
             }
+            // 2. Load all of integers with a count equal to the number of input arrays and load into the answer list
             foreach (var item in seenCount)
             {
                 if(item.Value == arrays.Length)
@@ -60,7 +63,7 @@ namespace coding_practice
                     ans.Add(item.Key);
                 }
             }
-            ans.Sort();
+            ans.Sort(); // not sure order is required, but sort just in case.
             return ans;
 
         }

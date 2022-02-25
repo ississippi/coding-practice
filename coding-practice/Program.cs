@@ -574,13 +574,65 @@ var l281 = new LeetcodeContest281();
 // 1940. Longest Common Subsequence Between Sorted Arrays - https://leetcode.com/problems/longest-common-subsequence-between-sorted-arrays/
 // =========================================================================================================================================
 
-var lcs1 = new LongestCommonSubsequence1940();
-var lcs1d1 = new int[][] { new int[] { 1, 3, 4 }, new int[] { 1, 4, 7, 9 } };
-var lcs1r1 = lcs1.LongestCommonSubsequence(lcs1d1);
-Util.PrintList("LongestCommonSubsequence of [1,3,4] and [1,4,7,9] is: ", lcs1r1);
-var lcs1d2 = new int[][] { new int[] { 2, 3, 6, 8 }, new int[] { 1, 2, 3, 5, 6, 7, 10 }, new int[] { 2, 3, 4, 6, 9 } };
-var lcs1r2 = lcs1.LongestCommonSubsequence(lcs1d2);
-Util.PrintList("LongestCommonSubsequence of [2, 3, 6, 8], [1, 2, 3, 5, 6, 7, 10], [2,3,4,6,9] is: ", lcs1r2);
-var lcs1d3 = new int[][] { new int[] { 1, 2, 3, 4, 5 }, new int[] { 6, 7, 8 } };
-var lcs1r3 = lcs1.LongestCommonSubsequence(lcs1d3);
-Util.PrintList("LongestCommonSubsequence of [1,2,3,4,5], [6,7,8] is: ", lcs1r3);
+//var lcs1 = new LongestCommonSubsequence1940();
+//var lcs1d1 = new int[][] { new int[] { 1, 3, 4 }, new int[] { 1, 4, 7, 9 } };
+//var lcs1r1 = lcs1.LongestCommonSubsequence(lcs1d1);
+//Util.PrintList("LongestCommonSubsequence of [1,3,4] and [1,4,7,9] is: ", lcs1r1);
+//var lcs1d2 = new int[][] { new int[] { 2, 3, 6, 8 }, new int[] { 1, 2, 3, 5, 6, 7, 10 }, new int[] { 2, 3, 4, 6, 9 } };
+//var lcs1r2 = lcs1.LongestCommonSubsequence(lcs1d2);
+//Util.PrintList("LongestCommonSubsequence of [2, 3, 6, 8], [1, 2, 3, 5, 6, 7, 10], [2,3,4,6,9] is: ", lcs1r2);
+//var lcs1d3 = new int[][] { new int[] { 1, 2, 3, 4, 5 }, new int[] { 6, 7, 8 } };
+//var lcs1r3 = lcs1.LongestCommonSubsequence(lcs1d3);
+//Util.PrintList("LongestCommonSubsequence of [1,2,3,4,5], [6,7,8] is: ", lcs1r3);
+
+// =========================================================================================================================================
+// 1198. Find Smallest Common Element in All Rows - https://leetcode.com/problems/find-smallest-common-element-in-all-rows/
+// =========================================================================================================================================
+
+//var l1198d1 = new int[][] { new int[] { 1, 2, 3, 4, 5 }, new int[] { 2, 4, 5, 8, 10 }, new int[] { 3, 5, 7, 9, 11 }, new int[] { 1, 3, 5, 7, 9 } };
+//var l1198r1 = SmallestCommonElement1198.SmallestCommonElement(l1198d1);
+//Console.WriteLine("SmallestCommonElement of [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]] is: " + l1198r1);
+////[1,2,3],[2,3,4],[2,3,5]
+//var l1198d2 = new int[][] { new int[] { 1, 2, 3 }, new int[] { 2, 3, 4 }, new int[] { 2, 3, 5 } };
+//var l1198r2 = SmallestCommonElement1198.SmallestCommonElement(l1198d2);
+//Console.WriteLine("SmallestCommonElement of [[1,2,3],[2,3,4],[2,3,5]] is: " + l1198r2);
+
+// =================================================================================================================================================
+// 1442. Count Triplets That Can Form Two Arrays of Equal XOR - https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/
+// =================================================================================================================================================
+
+//var l1442 = new CountTriplets1442();
+//var l1442r1 = l1442.CountTriplets(new int[] {2,3,1,6,7});
+//Console.Write("CountTriplets1442 of [2,3,1,6,7] is: " + l1442r1);
+
+// ===========================================================================================================
+// 1852. Distinct Numbers in Each Subarray - https://leetcode.com/problems/distinct-numbers-in-each-subarray/
+// ===========================================================================================================
+
+//var l1852 = new DistinctNumbers1852();
+//var l1852r1 = l1852.DistinctNumbers(new int[] { 1, 2, 3, 2, 2, 1, 3 }, 3);
+//Util.PrintArray("Distinct Numbers: ", l1852r1);
+//var l1852r2 = l1852.DistinctNumbers(new int[] { 1, 1, 1, 1, 2, 3, 4 }, 4);
+//Util.PrintArray("Distinct Numbers: ", l1852r2);
+
+// =================================================================================================================
+// 17. Letter Combinations of a Phone Number - https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+// =================================================================================================================
+
+//var l17 = new LetterCombinations17();
+//var l17r1 = l17.LetterCombinations("23");
+//Util.PrintList("Letter Combinations for 23: ", l17r1);
+
+// =================================================================================================================
+// 409. Longest Palindrome - https://leetcode.com/problems/longest-palindrome/
+// =================================================================================================================
+
+var l409 = new LongestPalindrome409();
+var l409r1 = l409.LongestPalindrome("abccccddAAA");
+Console.WriteLine("Longest Palindrome of abccccddAAA is: " + l409r1);
+var l409r2 = l409.LongestPalindrome("bb");
+Console.WriteLine("Longest Palindrome of bb is: " + l409r2);
+var l409r3 = l409.LongestPalindrome("ccc");
+Console.WriteLine("Longest Palindrome of ccc is: " + l409r3);
+var l409r4 = l409.LongestPalindrome("ababababa");
+Console.WriteLine("Longest Palindrome of ababababa is: " + l409r4);
