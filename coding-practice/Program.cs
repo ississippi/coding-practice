@@ -640,13 +640,28 @@ var l281 = new LeetcodeContest281();
 // =================================================================================================================
 // 442. Find All Duplicates in an Array - https://leetcode.com/problems/find-all-duplicates-in-an-array/
 // =================================================================================================================
-var l442 = new FindDuplicates442();
-var l442d1 = new List<int>() { 4, 3, 2, 7, 8, 2, 3, 1 };
-var l442r1 = l442.FindDuplicates(l442d1);
-Util.PrintList("FindDuplicates for 4, 3, 2, 7, 8, 2, 3, 1 is: ", l442r1);
-var l442d2 = new List<int>() { 1,1,2 };
-var l442r2 = l442.FindDuplicates(l442d2);
-Util.PrintList("FindDuplicates for 1,1,2 is: ", l442r2);
-var l442d3 = new List<int>() {  };
-var l442r3 = l442.FindDuplicates(l442d3);
-Util.PrintList("FindDuplicates for [] is: ", l442r3);
+//var l442 = new FindDuplicates442();
+//var l442d1 = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
+//var l442r1 = l442.FindDuplicates(l442d1);
+//Util.PrintList("FindDuplicates for 4, 3, 2, 7, 8, 2, 3, 1 is: ", l442r1);
+//var l442d2 = new int[] { 1,1,2 };
+//var l442r2 = l442.FindDuplicates(l442d2);
+//Util.PrintList("FindDuplicates for 1,1,2 is: ", l442r2);
+//var l442d3 = new int[] {  };
+//var l442r3 = l442.FindDuplicates(l442d3);
+//Util.PrintList("FindDuplicates for [] is: ", l442r3);
+
+// =================================================================================================================
+// 362. Design Hit Counter - https://leetcode.com/problems/design-hit-counter/
+// =================================================================================================================
+//["HitCounter","hit","hit","hit","getHits","hit","getHits","getHits"]
+//[[],[1],[2],[3],[4],[300],[300],[301]]
+var hitCounter = new HitCounter362();
+hitCounter.Hit(1);       // hit at timestamp 1.
+hitCounter.Hit(2);       // hit at timestamp 2.
+hitCounter.Hit(3);       // hit at timestamp 3.
+var l362r1 = hitCounter.GetHits(4);
+hitCounter.Hit(300);     // hit at timestamp 300.
+var l362r2 = hitCounter.GetHits(300);
+var l362r3 = hitCounter.GetHits(301);
+Console.WriteLine(String.Format($"4 = {l362r1}, 300 = {l362r2}, 301 = {l362r3}"));

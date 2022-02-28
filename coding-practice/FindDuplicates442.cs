@@ -23,11 +23,11 @@ namespace coding_practice
         // Example 3:
         // Input: nums = [1]
         // Output: []
-        public List<int> FindDuplicates(List<int> nums)
+        public IList<int> FindDuplicates(int[] nums)
         {
-           List<int> ans = new List<int>();
+            List<int> ans = new List<int>();
 
-            for (var i = 0; i < nums.Count; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
                 var num = nums[i];
                 var absNum = Math.Abs(num);
