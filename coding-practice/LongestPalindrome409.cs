@@ -78,10 +78,11 @@ namespace coding_practice
             }
 
             int ans = 0;
+            // this does not appear to work and more than 1 unpartnered character
             foreach (var v in letterCounts.Values)
             {
-                ans += v / 2 * 2;
-                if (ans % 2 == 0 && v % 2 == 1)
+                ans += v / 2 * 2; // this is like a Math.Floor for odd numbers.
+                if (ans % 2 == 0 && v % 2 == 1) 
                     ans++;
             }
             return ans;

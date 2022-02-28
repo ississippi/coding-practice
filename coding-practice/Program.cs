@@ -627,12 +627,26 @@ var l281 = new LeetcodeContest281();
 // 409. Longest Palindrome - https://leetcode.com/problems/longest-palindrome/
 // =================================================================================================================
 
-var l409 = new LongestPalindrome409();
-var l409r1 = l409.LongestPalindrome("abccccddAAA");
-Console.WriteLine("Longest Palindrome of abccccddAAA is: " + l409r1);
-var l409r2 = l409.LongestPalindrome("bb");
-Console.WriteLine("Longest Palindrome of bb is: " + l409r2);
-var l409r3 = l409.LongestPalindrome("ccc");
-Console.WriteLine("Longest Palindrome of ccc is: " + l409r3);
-var l409r4 = l409.LongestPalindrome("ababababa");
-Console.WriteLine("Longest Palindrome of ababababa is: " + l409r4);
+//var l409 = new LongestPalindrome409();
+//var l409r1 = l409.LongestPalindrome("abccccddAAA");
+//Console.WriteLine("Longest Palindrome of abccccddAAA is: " + l409r1);
+//var l409r2 = l409.LongestPalindrome("bb");
+//Console.WriteLine("Longest Palindrome of bb is: " + l409r2);
+//var l409r3 = l409.LongestPalindrome("ccc");
+//Console.WriteLine("Longest Palindrome of ccc is: " + l409r3);
+//var l409r4 = l409.LongestPalindrome("ababababa");
+//Console.WriteLine("Longest Palindrome of ababababa is: " + l409r4);
+
+// =================================================================================================================
+// 442. Find All Duplicates in an Array - https://leetcode.com/problems/find-all-duplicates-in-an-array/
+// =================================================================================================================
+var l442 = new FindDuplicates442();
+var l442d1 = new List<int>() { 4, 3, 2, 7, 8, 2, 3, 1 };
+var l442r1 = l442.FindDuplicates(l442d1);
+Util.PrintList("FindDuplicates for 4, 3, 2, 7, 8, 2, 3, 1 is: ", l442r1);
+var l442d2 = new List<int>() { 1,1,2 };
+var l442r2 = l442.FindDuplicates(l442d2);
+Util.PrintList("FindDuplicates for 1,1,2 is: ", l442r2);
+var l442d3 = new List<int>() {  };
+var l442r3 = l442.FindDuplicates(l442d3);
+Util.PrintList("FindDuplicates for [] is: ", l442r3);
