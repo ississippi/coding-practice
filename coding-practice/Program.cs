@@ -656,12 +656,61 @@ var l281 = new LeetcodeContest281();
 // =================================================================================================================
 //["HitCounter","hit","hit","hit","getHits","hit","getHits","getHits"]
 //[[],[1],[2],[3],[4],[300],[300],[301]]
-var hitCounter = new HitCounter362();
-hitCounter.Hit(1);       // hit at timestamp 1.
-hitCounter.Hit(2);       // hit at timestamp 2.
-hitCounter.Hit(3);       // hit at timestamp 3.
-var l362r1 = hitCounter.GetHits(4);
-hitCounter.Hit(300);     // hit at timestamp 300.
-var l362r2 = hitCounter.GetHits(300);
-var l362r3 = hitCounter.GetHits(301);
-Console.WriteLine(String.Format($"4 = {l362r1}, 300 = {l362r2}, 301 = {l362r3}"));
+//var hitCounter = new HitCounter362();
+//hitCounter.Hit(1);       // hit at timestamp 1.
+//hitCounter.Hit(2);       // hit at timestamp 2.
+//hitCounter.Hit(3);       // hit at timestamp 3.
+//var l362r1 = hitCounter.GetHits(4);
+//hitCounter.Hit(300);     // hit at timestamp 300.
+//var l362r2 = hitCounter.GetHits(300);
+//var l362r3 = hitCounter.GetHits(301);
+//Console.WriteLine(String.Format($"4 = {l362r1}, 300 = {l362r2}, 301 = {l362r3}"));
+
+// ==================================================================================================================================
+// 1249. Minimum Remove to Make Valid Parentheses - https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/solution/
+// ==================================================================================================================================
+//var l1249 = new MinRemoveToMakeValid1249();
+//var l1249r1 = l1249.MinRemoveToMakeValid("lee(t(c)o)de)");
+//Console.WriteLine(string.Format($"MinRemoveToMakeValid from lee(t(c)o)de) is {l1249r1}."));
+
+// ==================================================================================================================================
+// 3. Longest Substring Without Repeating Characters - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+// ==================================================================================================================================
+//var l3 = new LengthOfLongestSubstring3();
+//var l3r1 = l3.LengthOfLongestSubstring("abcabcbb");
+//Console.WriteLine("LengthOfLongestSubstring, abcabcbb, is: " + l3r1);
+//var l3r2 = l3.LengthOfLongestSubstring("bbbbb");
+//Console.WriteLine("LengthOfLongestSubstring, bbbbb, is: " + l3r2);
+//var l3r3 = l3.LengthOfLongestSubstring("pwwkew");
+//Console.WriteLine("LengthOfLongestSubstring, pwwkew, is: " + l3r3);
+//var l3r4 = l3.LengthOfLongestSubstring("au");
+//Console.WriteLine("LengthOfLongestSubstring, au, is: " + l3r4);
+//var l3r5 = l3.LengthOfLongestSubstring("abbccaabbabc");
+//Console.WriteLine("LengthOfLongestSubstring, abbccaabbabc, is: " + l3r5);
+
+// ==================================================================================================================================
+// 139. Word Break - https://leetcode.com/problems/word-break/
+// ==================================================================================================================================
+var l139 = new WordBreak139();
+//var l139d1 = new List<string>();
+//l139d1.Add("leet");
+//l139d1.Add("code");
+//var sd1 = "leetcode";
+//var l139r1 = l139.WordBreak(sd1, l139d1);
+//Console.WriteLine("WordBreak for leetcode is: " + l139r1);
+//var l139d2 = new List<string>();
+//l139d2.Add("apple");
+//l139d2.Add("pen");
+//l139d2.Add("apple");
+//var sd2 = "applepenapple";
+//var l139r2 = l139.WordBreak(sd2, l139d2);
+//Console.WriteLine("WordBreak for applepenapple is: " + l139r2);
+var l139d3 = new List<string>();
+l139d3.Add("cats");
+l139d3.Add("dog");
+l139d3.Add("sand");
+l139d3.Add("and");
+l139d3.Add("cat");
+var sd3 = "catsandog";
+var l139r3 = l139.WordBreak(sd3, l139d3);
+Console.WriteLine("WordBreak for catsandog is: " + l139r3);
