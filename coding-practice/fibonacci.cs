@@ -30,5 +30,17 @@ namespace coding_practice
             Console.Write(n + ",");
             return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
         }
+
+        public int Fib(int n)
+        {
+            var currentPos = 2;
+            var fibValues = new List<int>() { 0, 1 };
+            for (var i = 2; i <= n; i++)
+            {
+                var currentVal = fibValues[i - 1] + fibValues[i - 2];
+                fibValues.Add(currentVal);
+            }
+            return fibValues[n];
+        }
     }
 }
