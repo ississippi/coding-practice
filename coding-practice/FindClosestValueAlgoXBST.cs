@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace coding_practice
 {
-    internal class FindClosestValueAlgoXBST
-    {
+	internal class FindClosestValueAlgoXBST
+	{
 		public static int FindClosestValueInBst(BST tree, int target)
 		{
 			var closest = Int32.MaxValue - 1;
@@ -55,7 +55,7 @@ namespace coding_practice
 		}
 
 
-}
+	}
 	public class BST
 	{
 		public int value;
@@ -67,3 +67,4 @@ namespace coding_practice
 			this.value = value;
 		}
 	}
+}
