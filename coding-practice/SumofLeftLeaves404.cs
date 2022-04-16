@@ -6,40 +6,40 @@ using System.Threading.Tasks;
 
 namespace coding_practice
 {
-    internal class SumofLeftLeaves404
-    {
-        int sumOfLeftLeaves(TreeNode* root)
-        {
+    //internal class SumofLeftLeaves404
+    //{
+    //    int sumOfLeftLeaves(TreeNode* root)
+    //    {
 
-            return sumOfLeftLeaves(root, false);
-        }
+    //        return sumOfLeftLeaves(root, false);
+    //    }
 
-        int sumOfLeftLeaves(TreeNode* root, bool leftNode)
-        {
-            if (root == null)
-                return 0;
+    //    int sumOfLeftLeaves(TreeNode* root, bool leftNode)
+    //    {
+    //        if (root == null)
+    //            return 0;
 
-            if (root.left == null && root.right == null)
-            {
-                if (leftNode)
-                    return root.val;
-                else
-                    return 0;
-            }
+    //        if (root.left == null && root.right == null)
+    //        {
+    //            if (leftNode)
+    //                return root.val;
+    //            else
+    //                return 0;
+    //        }
 
-            var sum = 0;
-            if (root.left != null)
-            {
-                sum += sumOfLeftLeaves(root.left, true); // <-- is where 10 execution
-            }
-            if (root.right != null)
-            {
-                sum += sumOfLeftLeaves(root.right, false);
-            }
+    //        var sum = 0;
+    //        if (root.left != null)
+    //        {
+    //            sum += sumOfLeftLeaves(root.left, true); // <-- is where 10 execution
+    //        }
+    //        if (root.right != null)
+    //        {
+    //            sum += sumOfLeftLeaves(root.right, false);
+    //        }
 
-            return sum;
-        }
-    }
+    //        return sum;
+    //    }
+    //}
 
     // Definition for a binary tree node.
     public class TreeNode404 {

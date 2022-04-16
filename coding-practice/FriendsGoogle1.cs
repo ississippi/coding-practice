@@ -3,30 +3,61 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+// input: stream of friend pairs
+// output: sets of people who know each other
 
-namespace coding_practice
+// A-B, B-C, D-E
+// [[A, B, C], [D, E]]
+
+public class FriendList
 {
-    // input: stream of friend pairs
-    // output: sets of people who know each other
+    // [{A, B}]
+    Dictionary<string, List<string>> friendList = new Dictionary<string, List<string>>();
 
-    // A-B, B-C, D-E
-    // [[A, B, C], [D, E]]
-
-    public class Friends
+    public void SendFriends(string friendA, string friendB)
     {
-        // [{A, B}]
-        Dictionary<string, List<string>> friends = new Dictionary<string, List<string>>();
-
-        public void SendFriends(string friendA, string friendB)
+        if (!friendList.ContainsKey(friendA))
         {
-
+            friendList.Add(friendA, new List<string>());
         }
+        friendList[friendA].Add(friendB);
 
-        public List<List<string>> GetFriends()
+        if (friendList.ContainsKey(friendB))
         {
-            return null;
+            friendList[friendB].Add(friendA);
         }
-
+        else
+        {
+            friendList.Add(friendB, new List<string>());
+        }
     }
+
+    public void dfs(string v, List<string> friends, HashSet<string> visited)
+    {
+        // mark v is visited
+        // add v to a list of friends. list can be a parameter
+        // fetch all adjacent nodes of v
+        // if not visited, then visit (call dfs on that node)
+        visited.Add(v);
+        friends.Add(v);
+        //foreach (var friend in friendList)
+        //{
+        //    if
+        //}
+    }
+    public List<List<string>> GetRelationships()
+    {
+        var visited = new HashSet<string>();
+
+        foreach (var friend in friendList)
+        {
+            if (!visited.Contains(friend.Key))
+            {
+                //dfs(friend.Key, visited);
+            }
+        }
+        return null;
+    }
+
 
 }

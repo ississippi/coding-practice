@@ -257,9 +257,9 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 // ===================
 // Doordash
 // ===================
-var dd = new DoorDash();
-var dddata = new int[] { 3, 5, 1, 4, 2 };
-var eligible = dd.GetEligibleOrders(dddata);
+//var dd = new DoorDash();
+//var dddata = new int[] { 3, 5, 1, 4, 2 };
+//var eligible = dd.GetEligibleOrders(dddata);
 
 // ====================================================================================
 // Leetcode Contest 71
@@ -299,11 +299,11 @@ var eligible = dd.GetEligibleOrders(dddata);
 //var newNum = lc279.SmallestNumber(310);
 //Console.WriteLine(String.Format($"Expected: 301 Actual: {newNum}"));
 
-var ftd = new FindTheDifference389();
-var c1 = ftd.FindTheDifference("abcd", "abcde");
-Console.WriteLine("FindTheDifference for 'abcd', 'abcde' = " + c1);
-var c2 = ftd.FindTheDifference("", "y");
-Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
+//var ftd = new FindTheDifference389();
+//var c1 = ftd.FindTheDifference("abcd", "abcde");
+//Console.WriteLine("FindTheDifference for 'abcd', 'abcde' = " + c1);
+//var c2 = ftd.FindTheDifference("", "y");
+//Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 
 // ====================================================================================
 // Valid Sudoku 36
@@ -485,10 +485,10 @@ Console.WriteLine("FindTheDifference for '', 'y' = " + c2);
 // =======================================================================================================
 // 1817. Finding the Users Active Minutes https://leetcode.com/problems/finding-the-users-active-minutes/
 // =======================================================================================================
-var ftuam = new FindingUsersActiveMinutes1817();
-var logs1 = new int[][] { new int[] { 0, 5 }, new int[] { 1, 2 }, new int[] { 0, 2 }, new int[] { 0, 5 }, new int[] { 1, 3 } };
-var res1 = ftuam.FindingUsersActiveMinutes(logs1, 5);
-Console.WriteLine();
+//var ftuam = new FindingUsersActiveMinutes1817();
+//var logs1 = new int[][] { new int[] { 0, 5 }, new int[] { 1, 2 }, new int[] { 0, 2 }, new int[] { 0, 5 }, new int[] { 1, 3 } };
+//var res1 = ftuam.FindingUsersActiveMinutes(logs1, 5);
+//Console.WriteLine();
 
 
 // =======================================================================================================
@@ -518,7 +518,7 @@ Console.WriteLine();
 //
 //  6012. Count Integers With Even Digit Sum https://leetcode.com/contest/weekly-contest-281/problems/count-integers-with-even-digit-sum/
 // Easy
-var l281 = new LeetcodeContest281();
+//var l281 = new LeetcodeContest281();
 //var l281r1 = l281.CountEven(4);
 //Console.WriteLine("CountEven result from 4 is: " + l281r1); 
 //var l281r2 = l281.CountEven(30);
@@ -705,20 +705,50 @@ var l139 = new WordBreak139();
 //var sd2 = "applepenapple";
 //var l139r2 = l139.WordBreak(sd2, l139d2);
 //Console.WriteLine("WordBreak for applepenapple is: " + l139r2);
-var l139d3 = new List<string>();
-l139d3.Add("cats");
-l139d3.Add("dog");
-l139d3.Add("sand");
-l139d3.Add("and");
-l139d3.Add("cat");
-var sd3 = "catsandog";
-var l139r3 = l139.WordBreak(sd3, l139d3);
-Console.WriteLine("WordBreak for catsandog is: " + l139r3);
+//var l139d3 = new List<string>();
+//l139d3.Add("cats");
+//l139d3.Add("dog");
+//l139d3.Add("sand");
+//l139d3.Add("and");
+//l139d3.Add("cat");
+//var sd3 = "catsandog";
+//var l139r3 = l139.WordBreak(sd3, l139d3);
+//Console.WriteLine("WordBreak for catsandog is: " + l139r3);
 
 // ==================================================================================================================================
 // 404. Sum of Left Leaves - https://leetcode.com/problems/sum-of-left-leaves/
 // ==================================================================================================================================
-var l404 = new SumofLeftLeaves404();
-var l404d3 = new TreeNode404(3);
-var l139r3 = l139.WordBreak(sd3, l139d3);
-Console.WriteLine("WordBreak for catsandog is: " + l139r3);
+//var l404 = new SumofLeftLeaves404();
+//var l404d3 = new TreeNode404(3);
+//var l139r3 = l139.WordBreak(sd3, l139d3);
+//Console.WriteLine("WordBreak for catsandog is: " + l139r3);
+// ==================================================================================================================================
+// 133. Clone Graph - https://leetcode.com/problems/clone-graph/
+// ==================================================================================================================================
+var l133 = new coding_practice_graph_leetcode.CloneGraphLeetcode133();
+// [[2,4],[1,3],[2,4],[1,3]]
+var l133d1 = new List<List<int>>();
+var node1 = new coding_practice_graph_leetcode.Node(1);
+var node2 = new coding_practice_graph_leetcode.Node(2);
+var node3 = new coding_practice_graph_leetcode.Node(3);
+var node4 = new coding_practice_graph_leetcode.Node(4);
+node1.neighbors.Add(node2);
+node1.neighbors.Add(node4);
+node2.neighbors.Add(node1);
+node2.neighbors.Add(node3);
+node3.neighbors.Add(node2);
+node3.neighbors.Add(node4);
+node4.neighbors.Add(node1);
+node4.neighbors.Add(node3);
+//var l133r1 = l133.CloneGraph(node1);
+
+//var l6060 = new FindClosestNumbertoZero6060();
+//var l6060d1 = new int[] { -4, -2, 1, 4, 8 };
+////var l6060d1 = new int[] { -10000, -10000 };
+//var l6060r1 = l6060.FindClosestNumber(l6060d1);
+//Console.WriteLine("FindClosestNumbertoZero for [-4, -2, 1, 4, 8] is: " + l6060r1);
+
+var l6061 = new NumberofWaystoBuyPensandPencils6061();
+
+var l6061r1 = l6061.WaysToBuyPensPencils(20, 10, 5);
+Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r1);
