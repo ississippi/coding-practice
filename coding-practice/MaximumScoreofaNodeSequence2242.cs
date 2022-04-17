@@ -37,7 +37,7 @@ namespace coding_practice
     {
         public int MaximumScore(int[] scores, int[][] edges)
         {
-
+            return -1;
         }
     }
 }
