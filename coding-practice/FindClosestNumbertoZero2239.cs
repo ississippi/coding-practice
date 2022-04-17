@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace coding_practice
 {
-    internal class FindClosestNumbertoZero6060
+    internal class FindClosestNumbertoZero2239
     {
     public int FindClosestNumber(int[] nums)
         {

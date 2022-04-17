@@ -742,13 +742,30 @@ node4.neighbors.Add(node1);
 node4.neighbors.Add(node3);
 //var l133r1 = l133.CloneGraph(node1);
 
-//var l6060 = new FindClosestNumbertoZero6060();
+//var l6060 = new FindClosestNumbertoZero2239();
 //var l6060d1 = new int[] { -4, -2, 1, 4, 8 };
 ////var l6060d1 = new int[] { -10000, -10000 };
 //var l6060r1 = l6060.FindClosestNumber(l6060d1);
 //Console.WriteLine("FindClosestNumbertoZero for [-4, -2, 1, 4, 8] is: " + l6060r1);
 
-var l6061 = new NumberofWaystoBuyPensandPencils6061();
+var l6061 = new NumberofWaystoBuyPensandPencils2240();
 
 var l6061r1 = l6061.WaysToBuyPensPencils(20, 10, 5);
 Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r1);
+var l6061r2 = l6061.waysToBuyPensPencils(20, 10, 5);
+Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r2);
+
+var l2241 = new ATM();
+var l2241d1 = new List<int>() { 0, 0, 1, 2, 1 };
+var l2241d2 = new List<int>() { 0, 1, 0, 1, 1 };
+l2241.deposit(l2241d1);
+Console.WriteLine("ATM withdraw(600)"); 
+var atmResult = l2241.withdraw(600);
+Util.PrintList("ATM withdraw(600) result is: ", atmResult);
+l2241.deposit(l2241d2);
+Console.WriteLine("ATM withdraw(600)");
+atmResult = l2241.withdraw(600);
+Util.PrintList("ATM withdraw(600) result is: ", atmResult); 
+Console.WriteLine("ATM withdraw(550)");
+atmResult = l2241.withdraw(550);
+Util.PrintList("ATM withdraw(550) result is: ", atmResult);
