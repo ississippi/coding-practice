@@ -76,6 +76,7 @@ namespace coding_practice
         }
         public bool IsBadVersion(int n)
         {
+            // not coded:
             return true;
         }
 
