@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace coding_practice
 {
-    internal class BinarySearch704
+    internal class BinarySearchLeetcodeAlgo1
     {
         // Given an array of integers nums which is sorted in ascending order, and an integer target,
         // write a function to search target in nums.

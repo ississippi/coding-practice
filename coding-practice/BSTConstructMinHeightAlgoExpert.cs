@@ -67,6 +67,4 @@ namespace coding_practice
 			}
 		}
 		}
-	}
-
 }

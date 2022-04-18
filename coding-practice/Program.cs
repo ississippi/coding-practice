@@ -750,22 +750,28 @@ node4.neighbors.Add(node3);
 
 var l6061 = new NumberofWaystoBuyPensandPencils2240();
 
-var l6061r1 = l6061.WaysToBuyPensPencils(20, 10, 5);
-Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r1);
-var l6061r2 = l6061.waysToBuyPensPencils(20, 10, 5);
-Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r2);
+//var l6061r1 = l6061.WaysToBuyPensPencils(20, 10, 5);
+//Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r1);
+//var l6061r2 = l6061.waysToBuyPensPencils(20, 10, 5);
+//Console.WriteLine("WaysToBuyPensPencils(20, 10, 5) is: " + l6061r2);
 
-var l2241 = new ATM();
-var l2241d1 = new List<int>() { 0, 0, 1, 2, 1 };
-var l2241d2 = new List<int>() { 0, 1, 0, 1, 1 };
-l2241.deposit(l2241d1);
-Console.WriteLine("ATM withdraw(600)"); 
-var atmResult = l2241.withdraw(600);
-Util.PrintList("ATM withdraw(600) result is: ", atmResult);
-l2241.deposit(l2241d2);
-Console.WriteLine("ATM withdraw(600)");
-atmResult = l2241.withdraw(600);
-Util.PrintList("ATM withdraw(600) result is: ", atmResult); 
-Console.WriteLine("ATM withdraw(550)");
-atmResult = l2241.withdraw(550);
-Util.PrintList("ATM withdraw(550) result is: ", atmResult);
+//var l2241 = new ATM();
+//var l2241d1 = new List<int>() { 0, 0, 1, 2, 1 };
+//var l2241d2 = new List<int>() { 0, 1, 0, 1, 1 };
+//l2241.deposit(l2241d1);
+//Console.WriteLine("ATM withdraw(600)"); 
+//var atmResult = l2241.withdraw(600);
+//Util.PrintList("ATM withdraw(600) result is: ", atmResult);
+//l2241.deposit(l2241d2);
+//Console.WriteLine("ATM withdraw(600)");
+//atmResult = l2241.withdraw(600);
+//Util.PrintList("ATM withdraw(600) result is: ", atmResult); 
+//Console.WriteLine("ATM withdraw(550)");
+//atmResult = l2241.withdraw(550);
+//Util.PrintList("ATM withdraw(550) result is: ", atmResult);
+
+var l977 = new TwoPointersLeetcodeAlgo1();
+var l977d1 = new int[] { -4, -1, 0, 3, 10 };
+var l977r1 = l977.SortedSquares(l977d1);
+Util.PrintList("SortedSquares result for { -4, -1, 0, 3, 10 } is: ", l977r1);
+
