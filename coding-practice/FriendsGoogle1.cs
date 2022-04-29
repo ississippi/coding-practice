@@ -40,10 +40,13 @@ public class FriendList
         // if not visited, then visit (call dfs on that node)
         visited.Add(v);
         friends.Add(v);
-        //foreach (var friend in friendList)
-        //{
-        //    if
-        //}
+        foreach (var friend in friendList)
+        {
+            if (!visited.Contains(friend.Key))
+            {
+                dfs(friend.Key, friend.Value, visited);
+            }
+        }
     }
     public List<List<string>> GetRelationships()
     {
@@ -53,7 +56,7 @@ public class FriendList
         {
             if (!visited.Contains(friend.Key))
             {
-                //dfs(friend.Key, visited);
+                dfs(friend.Key, friend.Value, visited);
             }
         }
         return null;

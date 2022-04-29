@@ -36,9 +36,74 @@ namespace coding_practice
         }
 
         // 189. Rotate Array  https://leetcode.com/problems/rotate-array/
+        // Time complexity: O(n×k). All the numbers are shifted by one step
+        // Space complexity: O(1)
         public void Rotate(int[] nums, int k)
         {
-
+            // speed up the rotation
+            k %= nums.Length;
+            int temp, previous;
+            for (int i = 0; i < k; i++)
+            {
+                previous = nums[nums.Length - 1];
+                for (int j = 0; j < nums.Length; j++)
+                {
+                    temp = nums[j];
+                    nums[j] = previous;
+                    previous = temp;
+                }
+            }
         }
+        // Time complexity: O(n).
+        // One pass is used to put the numbers in the new array. And another pass to copy the new array to the original one.
+        // Space complexity: O(n) Another array of the same size is used
+        public void RotateExtraArray(int[] nums, int k)
+        {
+            int[] a = new int[nums.Length];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                a[(i + k) % nums.Length] = nums[i];
+            }
+            for (int i = 0; i < nums.Length; i++)
+            {
+                nums[i] = a[i];
+            }
+        }
+
+        public void MoveZeroes(int[] nums)
+        {
+            var j = 0;
+            for (var i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    nums[j++] = nums[i];
+                }
+            }
+            for (var i = j; i < nums.Length; i++)
+            {
+                nums[i] = 0;
+            }
+        }
+
+        public int[] TwoSum(int[] numbers, int target)
+        {
+            int[] result = new int[2];
+            for (var i = 0; i < numbers.Length; i++)
+            {
+                for (var j = i+1; j < numbers.Length; j++)
+                {
+                    //if (numbers[j] > target && numbers[j] != 0)
+                    //    break;
+                    if (numbers[i] + numbers[j] == target)
+                    {
+                        result[0] = i + 1;
+                        result[1] = j + 1;
+                    }
+                }
+            }
+            return result;
+        }
+
     }
 }
