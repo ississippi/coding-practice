@@ -208,11 +208,11 @@ var d = new int[] { 4, 1, 2, 1, 2 };
 // ===================
 // Fibonacci
 // ===================
-//var fib = new Fibonacci();
-//var x = fib.FibonacciIterative(8);
-//Console.WriteLine(" result: " + x);
-//var y = fib.FibonacciRecursive(8);
-//Console.WriteLine(" result: " + y);
+var fib = new Fibonacci();
+var x = fib.FibonacciIterative(8);
+Console.WriteLine("FibonacciIterative(8) result: " + x);
+var y = fib.FibonacciRecursive(8);
+Console.WriteLine("FibonacciRecursive(8) result: " + y);
 
 //List<int> orders = new List<int>();
 //orders.Add(3);
@@ -775,10 +775,10 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var l977r1 = l977.SortedSquares(l977d1);
 //Util.PrintList("SortedSquares result for { -4, -1, 0, 3, 10 } is: ", l977r1);
 
-//var l189 = new TwoPointersLeetcodeAlgo1();
-//var l189d1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-//l189.Rotate(l189d1, 3);
-//Util.PrintList("Rotate result for { 1, 2, 3, 4, 5, 6, 7 } rotate=3 is: ", l189d1);
+var l189 = new TwoPointersLeetcodeAlgo1();
+var l189d1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+l189.Rotate(l189d1, 3);
+Util.PrintList("Rotate result for { 1, 2, 3, 4, 5, 6, 7 } rotate=3 is: ", l189d1);
 
 var l283 = new TwoPointersLeetcodeAlgo1();
 var l283d1 = new int[] { 0, 1, 0, 3, 12 };

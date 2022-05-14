@@ -35,6 +35,19 @@ namespace coding_practice
 
         }
 
+        public int[] SortedSquares2(int[] nums)
+        {
+            var result = new List<int>();
+
+            foreach (var num in nums)
+            {
+                result.Add(num * num);
+            }
+            result.Sort();
+
+            return result.ToArray();
+        }
+
         // 189. Rotate Array  https://leetcode.com/problems/rotate-array/
         // Time complexity: O(n×k). All the numbers are shifted by one step
         // Space complexity: O(1)
