@@ -775,23 +775,32 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var l977r1 = l977.SortedSquares(l977d1);
 //Util.PrintList("SortedSquares result for { -4, -1, 0, 3, 10 } is: ", l977r1);
 
-var l189 = new TwoPointersLeetcodeAlgo1();
-var l189d1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-l189.Rotate(l189d1, 3);
-Util.PrintList("Rotate result for { 1, 2, 3, 4, 5, 6, 7 } rotate=3 is: ", l189d1);
+//var l189 = new TwoPointersLeetcodeAlgo1();
+//var l189d1 = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+//l189.Rotate(l189d1, 3);
+//Util.PrintList("Rotate result for { 1, 2, 3, 4, 5, 6, 7 } rotate=3 is: ", l189d1);
 
-var l283 = new TwoPointersLeetcodeAlgo1();
-var l283d1 = new int[] { 0, 1, 0, 3, 12 };
-l283.MoveZeroes(l283d1);
-Util.PrintList("MoveZeroes result for { 0, 1, 0, 3, 12 } is: ", l283d1);
+//var l283 = new TwoPointersLeetcodeAlgo1();
+//var l283d1 = new int[] { 0, 1, 0, 3, 12 };
+//l283.MoveZeroes(l283d1);
+//Util.PrintList("MoveZeroes result for { 0, 1, 0, 3, 12 } is: ", l283d1);
 
-// 167. Two Sum II - Input Array Is Sorted
-var l167 = new TwoPointersLeetcodeAlgo1();
-var l167d1 = new int[] { 2,3,4 };
-var target = 6;
-var l167r1 = l167.TwoSum(l167d1, target);
-Util.PrintList("TwoSum result for { 2,3,4 } with target = 6 is: ", l167r1);
-var l167d2 = new int[] { -3, 3, 4, 90 };
-target = 0;
-var l167r2 = l167.TwoSum(l167d2, target);
-Util.PrintList("TwoSum result for { -3, 3, 4, 90 } with target = 0 is: ", l167r2);
+//// 167. Two Sum II - Input Array Is Sorted
+//var l167 = new TwoPointersLeetcodeAlgo1();
+//var l167d1 = new int[] { 2,3,4 };
+//var target = 6;
+//var l167r1 = l167.TwoSum(l167d1, target);
+//Util.PrintList("TwoSum result for { 2,3,4 } with target = 6 is: ", l167r1);
+//var l167d2 = new int[] { -3, 3, 4, 90 };
+//target = 0;
+//var l167r2 = l167.TwoSum(l167d2, target);
+//Util.PrintList("TwoSum result for { -3, 3, 4, 90 } with target = 0 is: ", l167r2);
+
+var lc78 = new LeetcodeBiweeklyContest78();
+var lc78d1 = new int[] { 10, 4, -8, 7 };
+var lc78d2 = new int[] { 2, 3, 1, 0 };
+var lc78r1 = lc78.WaysToSplitArray2(lc78d1);
+Console.WriteLine("WaysToSplitArray2 result for { 10, 4, -8, 7 } is: " + lc78r1);
+var lc78r2 = lc78.WaysToSplitArray2(lc78d2);
+Console.WriteLine("WaysToSplitArray2 result for { 2, 3, 1, 0 } is: " + lc78r2);
+

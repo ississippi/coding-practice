@@ -60,6 +60,29 @@ namespace coding_practice
             }
             return waysCount;
         }
-
+        public int WaysToSplitArray2(int[] nums)
+        {
+            var waysCount = 0;
+            var leftValues = new int[nums.Length-1];
+            var rightValues = new int[nums.Length-1];
+            var accumulator = 0;
+            for (var i = 0; i < nums.Length-1; i++)
+            {
+                accumulator += nums[i];
+                leftValues[i] = accumulator;
+            }
+            accumulator = 0;
+            for (var i = nums.Length - 1; i > 0; i--)
+            {
+                accumulator += nums[i];
+                rightValues[i-1] = accumulator;
+            }
+            for (var i = 0; i < leftValues.Length; i++)
+            {
+                if (leftValues[i] >= rightValues[i])
+                    waysCount++;
+            }
+            return waysCount;
+        }
     }
 }
