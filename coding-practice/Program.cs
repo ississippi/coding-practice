@@ -796,11 +796,23 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var l167r2 = l167.TwoSum(l167d2, target);
 //Util.PrintList("TwoSum result for { -3, 3, 4, 90 } with target = 0 is: ", l167r2);
 
-var lc78 = new LeetcodeBiweeklyContest78();
-var lc78d1 = new int[] { 10, 4, -8, 7 };
-var lc78d2 = new int[] { 2, 3, 1, 0 };
-var lc78r1 = lc78.WaysToSplitArray2(lc78d1);
-Console.WriteLine("WaysToSplitArray2 result for { 10, 4, -8, 7 } is: " + lc78r1);
-var lc78r2 = lc78.WaysToSplitArray2(lc78d2);
-Console.WriteLine("WaysToSplitArray2 result for { 2, 3, 1, 0 } is: " + lc78r2);
+//var lc78 = new LeetcodeBiweeklyContest78();
+//var lc78d1 = new int[] { 10, 4, -8, 7 };
+//var lc78d2 = new int[] { 2, 3, 1, 0 };
+//var lc78r1 = lc78.WaysToSplitArray2(lc78d1);
+//Console.WriteLine("WaysToSplitArray2 result for { 10, 4, -8, 7 } is: " + lc78r1);
+//var lc78r2 = lc78.WaysToSplitArray2(lc78d2);
+//Console.WriteLine("WaysToSplitArray2 result for { 2, 3, 1, 0 } is: " + lc78r2);
+
+var lcdg = new DigitCount123();
+var lcdgd1 = "1210";
+var reslcdg = lcdg.DigitCount(lcdgd1);
+Console.WriteLine("DigitCount result for { 1210 } is: " + reslcdg);
+
+
+var msgs = new string[] { "tP x M VC h lmD", "D X XF w V", "sh m Pgl", "pN pa", "C SL m G Pn v", "K z UL B W ee", "Yf yo n V U Za f np", "j J sk f qr e v t", "L Q cJ c J Z jp E", "Be a aO", "nI c Gb k Y C QS N", "Yi Bts", "gp No g s VR", "py A S sNf", "ZS H Bi De dj dsh", "ep MA KI Q Ou" };
+var senders = new string[] { "OXlq", "IFGaW", "XQPeWJRszU", "Gb", "HArIr", "Gb", "FnZd", "FnZd", "HArIr", "OXlq", "IFGaW", "XQPeWJRszU", "EMoUs", "Gb", "EMoUs", "EMoUs" };
+var lclwc = new DigitCount123();
+var lclwcRes = lclwc.LargestWordCount(msgs, senders);
+
 

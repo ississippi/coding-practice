@@ -56,7 +56,20 @@ namespace coding_practice
         // You are given an API bool isBadVersion(version) which returns whether version is bad.
         // Implement a function to find the first bad version.
         // You should minimize the number of calls to the API.
+        
+        // My Accepted solution
+        // O(n) time and O(1) space
         public int FirstBadVersion(int n)
+        {
+            while (IsBadVersion(n))
+            {
+                n--;
+            }
+            return n + 1;
+        }
+        // Binary search approach
+        // O(logn) time and O(1) space
+        public int FirstBadVersionSolution2(int n)
         {
             var left = 0;
             var right = n;
@@ -104,5 +117,23 @@ namespace coding_practice
             }
             return left;
         }
+        // 704. Binary Search
+        // https://leetcode.com/problems/binary-search/
+        public int BinarySearch(int[] nums, int target)
+        {
+            int pivot = 0;
+            var left = 0;
+            var right = nums.Length - 1;
+            while (left <= right)
+            {
+                pivot = left + (right - left) / 2;
+                if (nums[pivot] == target)
+                    return pivot;
+                if (target < nums[pivot]) right = pivot - 1;
+                else left = pivot + 1;
+            }
+            return -1;
+        }
     }
 }
+

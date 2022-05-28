@@ -60,12 +60,17 @@ namespace coding_practice
             }
             return waysCount;
         }
+
+        // Accepted! (after the contest ended :) )
+        // AND...
+        // Runtime: 295 ms, faster than 100.00% of C# online submissions for Number of Ways to Split Array.
+        // Memory Usage: 51.3 MB, less than 100.00% of C# online submissions for Number of Ways to Split Array.        
         public int WaysToSplitArray2(int[] nums)
         {
             var waysCount = 0;
-            var leftValues = new int[nums.Length-1];
-            var rightValues = new int[nums.Length-1];
-            var accumulator = 0;
+            var leftValues = new double[nums.Length-1];
+            var rightValues = new double[nums.Length-1];
+            double accumulator = 0;
             for (var i = 0; i < nums.Length-1; i++)
             {
                 accumulator += nums[i];
@@ -82,6 +87,14 @@ namespace coding_practice
                 if (leftValues[i] >= rightValues[i])
                     waysCount++;
             }
+            int intVar = 0;
+            double dblVar = 0;
+            for (var i = 1; i < 100000; i++)
+            {
+                intVar += i * -1;
+                dblVar += i * -1;
+            }
+            Console.WriteLine("intVar: " + intVar + " dblVar: " + dblVar);
             return waysCount;
         }
     }
