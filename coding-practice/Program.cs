@@ -804,15 +804,33 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var lc78r2 = lc78.WaysToSplitArray2(lc78d2);
 //Console.WriteLine("WaysToSplitArray2 result for { 2, 3, 1, 0 } is: " + lc78r2);
 
-var lcdg = new DigitCount123();
-var lcdgd1 = "1210";
-var reslcdg = lcdg.DigitCount(lcdgd1);
-Console.WriteLine("DigitCount result for { 1210 } is: " + reslcdg);
+//var lcdg = new DigitCount123();
+//var lcdgd1 = "1210";
+//var reslcdg = lcdg.DigitCount(lcdgd1);
+//Console.WriteLine("DigitCount result for { 1210 } is: " + reslcdg);
 
 
-var msgs = new string[] { "tP x M VC h lmD", "D X XF w V", "sh m Pgl", "pN pa", "C SL m G Pn v", "K z UL B W ee", "Yf yo n V U Za f np", "j J sk f qr e v t", "L Q cJ c J Z jp E", "Be a aO", "nI c Gb k Y C QS N", "Yi Bts", "gp No g s VR", "py A S sNf", "ZS H Bi De dj dsh", "ep MA KI Q Ou" };
-var senders = new string[] { "OXlq", "IFGaW", "XQPeWJRszU", "Gb", "HArIr", "Gb", "FnZd", "FnZd", "HArIr", "OXlq", "IFGaW", "XQPeWJRszU", "EMoUs", "Gb", "EMoUs", "EMoUs" };
-var lclwc = new DigitCount123();
-var lclwcRes = lclwc.LargestWordCount(msgs, senders);
+//var msgs = new string[] { "tP x M VC h lmD", "D X XF w V", "sh m Pgl", "pN pa", "C SL m G Pn v", "K z UL B W ee", "Yf yo n V U Za f np", "j J sk f qr e v t", "L Q cJ c J Z jp E", "Be a aO", "nI c Gb k Y C QS N", "Yi Bts", "gp No g s VR", "py A S sNf", "ZS H Bi De dj dsh", "ep MA KI Q Ou" };
+//var senders = new string[] { "OXlq", "IFGaW", "XQPeWJRszU", "Gb", "HArIr", "Gb", "FnZd", "FnZd", "HArIr", "OXlq", "IFGaW", "XQPeWJRszU", "EMoUs", "Gb", "EMoUs", "EMoUs" };
+//var lclwc = new DigitCount123();
+//var lclwcRes = lclwc.LargestWordCount(msgs, senders);
 
+var nrb = new RecursionNurbo();
+var s1 = "gamificationsoftwareengineeringactivities";
+var nrbStringLen = nrb.GetStringLength(s1);
+var expected = s1.Length;
+if (nrbStringLen == expected)
+{
+    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen}");
+}
+else
+{
+    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen} but expected: {expected}.");
+}
+
+var nrbConCt = nrb.GetConsonantCount(s1);
+Console.Write($"Found {nrbConCt} consonants in {s1}");
+
+//var nrbd1 = new int[] { 1, 2, 6, 4, 5, 6 };
+//var nrbRes1 = nrb.RemoveElements(nrbd1, 6);
 
