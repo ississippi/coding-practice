@@ -815,22 +815,33 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var lclwc = new DigitCount123();
 //var lclwcRes = lclwc.LargestWordCount(msgs, senders);
 
-var nrb = new RecursionNurbo();
-var s1 = "gamificationsoftwareengineeringactivities";
-var nrbStringLen = nrb.GetStringLength(s1);
-var expected = s1.Length;
-if (nrbStringLen == expected)
-{
-    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen}");
-}
-else
-{
-    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen} but expected: {expected}.");
-}
+//var nrb = new RecursionNurbo();
+//var s1 = "gamificationsoftwareengineeringactivities";
+//var nrbStringLen = nrb.GetStringLength(s1);
+//var expected = s1.Length;
+//if (nrbStringLen == expected)
+//{
+//    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen}");
+//}
+//else
+//{
+//    Console.WriteLine($"GetStringLength result for {s1} is: {nrbStringLen} but expected: {expected}.");
+//}
 
-var nrbConCt = nrb.GetConsonantCount(s1);
-Console.Write($"Found {nrbConCt} consonants in {s1}");
+//var nrbConCt = nrb.GetConsonantCount(s1);
+//Console.Write($"Found {nrbConCt} consonants in {s1}");
 
 //var nrbd1 = new int[] { 1, 2, 6, 4, 5, 6 };
 //var nrbRes1 = nrb.RemoveElements(nrbd1, 6);
+
+var ws79 = new FindStringInMatrix79();
+var ws79d1 = new char[][] { new char[]{ 'A', 'B', 'C', 'E' }, new char[]{ 'S', 'F', 'C', 'S' }, new char[]{ 'A', 'D', 'E', 'E' } };
+var ws79d2 = "ABCCED";
+var ws79r1 = ws79.Exist(ws79d1, ws79d2);
+Console.WriteLine($"Exist result for {ws79d2} is: {ws79r1}");
+var ws79d1b = new char[][] { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
+var ws79d2b = "ABCB";
+var ws79r1b = ws79.Exist(ws79d1b, ws79d2b);
+Console.WriteLine($"Exist result for {ws79d2b} is: {ws79r1b}");
+
 
