@@ -691,7 +691,7 @@ Console.WriteLine("FibonacciRecursive(8) result: " + y);
 // ==================================================================================================================================
 // 139. Word Break - https://leetcode.com/problems/word-break/
 // ==================================================================================================================================
-var l139 = new WordBreak139();
+//var l139 = new WordBreak139();
 //var l139d1 = new List<string>();
 //l139d1.Add("leet");
 //l139d1.Add("code");
@@ -834,14 +834,29 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var nrbd1 = new int[] { 1, 2, 6, 4, 5, 6 };
 //var nrbRes1 = nrb.RemoveElements(nrbd1, 6);
 
-var ws79 = new FindStringInMatrix79();
-var ws79d1 = new char[][] { new char[]{ 'A', 'B', 'C', 'E' }, new char[]{ 'S', 'F', 'C', 'S' }, new char[]{ 'A', 'D', 'E', 'E' } };
-var ws79d2 = "ABCCED";
-var ws79r1 = ws79.Exist(ws79d1, ws79d2);
-Console.WriteLine($"Exist result for {ws79d2} is: {ws79r1}");
-var ws79d1b = new char[][] { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
-var ws79d2b = "ABCB";
-var ws79r1b = ws79.Exist(ws79d1b, ws79d2b);
-Console.WriteLine($"Exist result for {ws79d2b} is: {ws79r1b}");
+//var ws79 = new FindStringInMatrix79();
+//var ws79d1 = new char[][] { new char[]{ 'A', 'B', 'C', 'E' }, new char[]{ 'S', 'F', 'C', 'S' }, new char[]{ 'A', 'D', 'E', 'E' } };
+//var ws79d2 = "ABCCED";
+//var ws79r1 = ws79.Exist(ws79d1, ws79d2);
+//Console.WriteLine($"Exist result for {ws79d2} is: {ws79r1}");
+//var ws79d1b = new char[][] { new char[] { 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
+//var ws79d2b = "ABCB";
+//var ws79r1b = ws79.Exist(ws79d1b, ws79d2b);
+//Console.WriteLine($"Exist result for {ws79d2b} is: {ws79r1b}");
+
+//var wsPok = new BestPokerHand();
+//var wsPokSuits1 = new char[] { 'a', 'a', 'a', 'a', 'a' };
+//var wsPokRanks1 = new int[] { 13, 2, 3, 1, 9 };
+//var wsPokRes1 = wsPok.BestHand(wsPokRanks1, wsPokSuits1);
+//Console.WriteLine($"Best Poker Hand {wsPokRes1}");
+//var wsPokSuits2 = new char[] { 'a', 'b', 'c', 'c', 'e' };
+//var wsPokRanks2 = new int[] { 1,2,3,3,3 };
+//var wsPokRes = wsPok.BestHand(wsPokRanks2, wsPokSuits2);
+//Console.WriteLine($"Best Poker Hand {wsPokRes}");
+
+var zfs = new ZeroFilledSubarrays();
+var zfsd1 = new int[] { 1,2,3,0,0,4,0,0,0,3,3,0,3,0,0,0,0 };
+var zfsRes = zfs.ZeroFilledSubarray(zfsd1);
+Console.WriteLine($"Zero filled subarrays: {zfsRes}");
 
 
