@@ -854,9 +854,14 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var wsPokRes = wsPok.BestHand(wsPokRanks2, wsPokSuits2);
 //Console.WriteLine($"Best Poker Hand {wsPokRes}");
 
-var zfs = new ZeroFilledSubarrays();
-var zfsd1 = new int[] { 1,2,3,0,0,4,0,0,0,3,3,0,3,0,0,0,0 };
-var zfsRes = zfs.ZeroFilledSubarray(zfsd1);
-Console.WriteLine($"Zero filled subarrays: {zfsRes}");
+//var zfs = new ZeroFilledSubarrays();
+//var zfsd1 = new int[] { 1,2,3,0,0,4,0,0,0,3,3,0,3,0,0,0,0 };
+//var zfsRes = zfs.ZeroFilledSubarray(zfsd1);
+//Console.WriteLine($"Zero filled subarrays: {zfsRes}");
+
+var ts2 = new TaskSchedulerIIContest();
+var ts2d1 = new int[] { 1, 2, 1, 2, 3, 1 };
+var ts2Res = ts2.TaskSchedulerII(ts2d1,3);
+Console.WriteLine($"Task Scheduler II days: {ts2Res}");
 
 
