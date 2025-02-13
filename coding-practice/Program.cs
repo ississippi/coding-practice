@@ -6,9 +6,18 @@ using coding_practice;
 using Newtonsoft.Json;
 using System.Diagnostics;
 
-var a = new char[] { 'h', 'e', 'l', 'l', 'o' };
-var d = new int[] { 4, 1, 2, 1, 2 };
+//var a = new char[] { 'h', 'e', 'l', 'l', 'o' };
+//var d = new int[] { 4, 1, 2, 1, 2 };
 
+//var websiteToCrawl = "https://andyljones.com";
+var websiteToCrawl = "https://www.msn.com/";
+
+var crawl = new WebCrawler();
+List<string> links = await crawl.GetAllLinks(websiteToCrawl);
+foreach (var link in links)
+{
+    Debug.WriteLine(link);
+}
 
 //var s1 = new ReverseString();
 //s1.ReverseString2Pointers(a);
@@ -878,9 +887,9 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //var repeated = BinaryNumbersHR.BNRepeated(439);
 //repeated = BinaryNumbersHR.BNRepeated(262141);
 
-var array6by6_1 = new int[][] { new int[] { 1, 1, 1, 0, 0, 0 }, new int[] { 0, 1, 0, 0, 0, 0 }, new int[] { 1, 1, 1, 0, 0, 0 }, new int[] { 0, 0, 2, 4, 4, 0 }, new int[] { 0, 0, 0, 2, 0, 0 }, new int[] { 0, 0, 1, 2, 4, 0 } };
-var array6by6_2 = new int[][] { new int[] { -1, 1, -1, 0, 0, 0 }, new int[] { 0, -1, 0, 0, 0, 0 }, new int[] { -1, -1, -1, 0, 0, 0 }, new int[] { 0, -9, 2, -4, -4, 0 }, new int[] { -7, 0, 0, -2, 0, 0 }, new int[] { 0, 0, -1, -2, -4, 0 } };
-var maxHGVal = Array2DHR.MaxHourGlassValue(array6by6_1);
-Debug.WriteLine($"Max Hour Glass Value 1 is {maxHGVal}"); 
-maxHGVal = Array2DHR.MaxHourGlassValue(array6by6_2);
-Debug.WriteLine($"Max Hour Glass Value 2 is {maxHGVal}");
+//var array6by6_1 = new int[][] { new int[] { 1, 1, 1, 0, 0, 0 }, new int[] { 0, 1, 0, 0, 0, 0 }, new int[] { 1, 1, 1, 0, 0, 0 }, new int[] { 0, 0, 2, 4, 4, 0 }, new int[] { 0, 0, 0, 2, 0, 0 }, new int[] { 0, 0, 1, 2, 4, 0 } };
+//var array6by6_2 = new int[][] { new int[] { -1, 1, -1, 0, 0, 0 }, new int[] { 0, -1, 0, 0, 0, 0 }, new int[] { -1, -1, -1, 0, 0, 0 }, new int[] { 0, -9, 2, -4, -4, 0 }, new int[] { -7, 0, 0, -2, 0, 0 }, new int[] { 0, 0, -1, -2, -4, 0 } };
+//var maxHGVal = Array2DHR.MaxHourGlassValue(array6by6_1);
+//Debug.WriteLine($"Max Hour Glass Value 1 is {maxHGVal}"); 
+//maxHGVal = Array2DHR.MaxHourGlassValue(array6by6_2);
+//Debug.WriteLine($"Max Hour Glass Value 2 is {maxHGVal}");
