@@ -134,6 +134,39 @@ namespace coding_practice
             }
             return -1;
         }
+
+        public static bool BinarySearchSimple(int num, int[] arr)
+        {
+            var left = 0;
+            var right = arr.Length - 1;
+            var mid = (right + left) / 2;
+            var counter = 0;
+            while (left < right)
+            {
+                if (counter++ > 10)
+                    return false;
+                Console.WriteLine($"1: arr[mid]: {arr[mid]}, left: {left}, mid: {mid} right: {right}");
+                if (arr[mid] == num)
+                    return true;
+                else if (arr[mid] > num)
+                {
+                    // Move left
+                    right = mid;
+                    mid = (right + left) / 2;
+                    Console.WriteLine($"2: arr[mid]: {arr[mid]}, left: {left}, mid: {mid}, right: {right}");
+                }
+                else
+                {
+                    // move right
+                    left = mid;
+                    mid = (right + left) / 2;
+                    Console.WriteLine($"3: arr[mid]: {arr[mid]}, left: {left}, mid: {mid}, right: {right}");
+                }
+            }
+
+
+            return false;
+        }
     }
 }
 
