@@ -49,10 +49,14 @@ namespace coding_practice
                     tail.next = list2;
                     list2 = list2.next;
                 }
+
+                tail = tail.next;
             }
             tail.next = list1 ?? list2;
 
             return head.next;
+
+            // time: O(m + n), spacer: O(1)
         }
     }
 

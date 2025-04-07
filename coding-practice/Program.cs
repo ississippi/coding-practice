@@ -907,4 +907,5 @@ foreach (int i in list2)
     l2.Append(i);
 }
 
-var node = MergeTwoLinkedLists.MergeTwoListsRecursive(l1.head, l2.head);
+//var node = MergeTwoLinkedLists.MergeTwoListsRecursive(l1.head, l2.head);
+var node = MergeTwoLinkedLists.MergeTwoListsIterative(l1.head, l2.head);
