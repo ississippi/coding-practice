@@ -99,6 +99,7 @@ namespace coding_practice
             }
         }
 
+        // Time: O(n^2) Space: O(1)
         public int[] TwoSum(int[] numbers, int target)
         {
             int[] result = new int[2];
@@ -116,6 +117,27 @@ namespace coding_practice
                 }
             }
             return result;
+        }
+
+        // Time: O(n) Space: O(n)
+        public int[] TwoSumDictionary(int[] nums, int target)
+        {
+            var seenMap = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var cur = nums[i];
+                var x = target - cur;
+                if (seenMap.ContainsKey(x))
+                {
+                    return new int[2] {
+                    seenMap[x],
+                    i
+                };
+                }
+                if (!seenMap.ContainsKey(cur))
+                    seenMap.Add(cur, i);
+            }
+            return new int[2];
         }
 
     }
