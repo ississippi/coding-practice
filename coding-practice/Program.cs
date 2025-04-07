@@ -10,14 +10,14 @@ using System.Diagnostics;
 //var d = new int[] { 4, 1, 2, 1, 2 };
 
 //var websiteToCrawl = "https://andyljones.com";
-var websiteToCrawl = "https://www.msn.com/";
+//var websiteToCrawl = "https://www.msn.com/";
 
-var crawl = new WebCrawler();
-List<string> links = await crawl.GetAllLinks(websiteToCrawl);
-foreach (var link in links)
-{
-    Debug.WriteLine(link);
-}
+//var crawl = new WebCrawler();
+//List<string> links = await crawl.GetAllLinks(websiteToCrawl);
+//foreach (var link in links)
+//{
+//    Debug.WriteLine(link);
+//}
 
 //var s1 = new ReverseString();
 //s1.ReverseString2Pointers(a);
@@ -218,11 +218,11 @@ foreach (var link in links)
 // ===================
 // Fibonacci
 // ===================
-var fib = new Fibonacci();
-var x = fib.FibonacciIterative(8);
-Debug.WriteLine("FibonacciIterative(8) result: " + x);
-var y = fib.FibonacciRecursive(8);
-Debug.WriteLine("FibonacciRecursive(8) result: " + y);
+//var fib = new Fibonacci();
+//var x = fib.FibonacciIterative(8);
+//Debug.WriteLine("FibonacciIterative(8) result: " + x);
+//var y = fib.FibonacciRecursive(8);
+//Debug.WriteLine("FibonacciRecursive(8) result: " + y);
 
 //List<int> orders = new List<int>();
 //orders.Add(3);
@@ -893,3 +893,18 @@ var l6061 = new NumberofWaystoBuyPensandPencils2240();
 //Debug.WriteLine($"Max Hour Glass Value 1 is {maxHGVal}"); 
 //maxHGVal = Array2DHR.MaxHourGlassValue(array6by6_2);
 //Debug.WriteLine($"Max Hour Glass Value 2 is {maxHGVal}");
+
+var list1 = new int[] { 1, 2, 4 };
+var list2 = new int[] { 1, 3, 4 };
+var l1 = new LinkedListNode();
+var l2 = new LinkedListNode();
+foreach(int i in list1)
+{
+    l1.Append(i);
+}
+foreach (int i in list2)
+{
+    l2.Append(i);
+}
+
+var node = MergeTwoLinkedLists.MergeTwoListsRecursive(l1.head, l2.head);
