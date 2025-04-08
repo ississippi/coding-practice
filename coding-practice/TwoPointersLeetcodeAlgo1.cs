@@ -132,7 +132,7 @@ namespace coding_practice
                     return new int[2] {
                     seenMap[x],
                     i
-                };
+                    };
                 }
                 if (!seenMap.ContainsKey(cur))
                     seenMap.Add(cur, i);
